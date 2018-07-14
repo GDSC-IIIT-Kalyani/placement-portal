@@ -2,10 +2,6 @@ body,
 html {
   margin: 0px;
   padding: 0px;
-  background-image: url('../img/background.svg');
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: right top;
   height: 100%;
   font-family: 'Roboto Condensed', sans-serif;
   color: rgb(5, 5, 56);
@@ -31,6 +27,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  z-index: 999;
 }
 
 #header #logo-holder {
@@ -45,11 +42,13 @@ a {
 
 #header #nav a {
   display: inline-block;
-  margin: 15px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  line-height: 20px;
 }
 
 #header #nav a:hover {
-  color: rgb(20, 45, 84) ;
+  background-color: rgb(248, 248, 248) ;
 }
 
 #header #nav a.blue-background {
@@ -61,15 +60,31 @@ a {
 }
 
 #home {
+  position: relative;
   min-height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+ /* background-image: url('../img/background.svg');
+  background-repeat: no-repeat;
+  background-size: 78%;
+  background-position: right top; */
 }
 
 #home > div {
   width: 50%;
   height: 100%;
+}
+
+#about-us {
+  border-top: 1px solid#ebecf0;
+  margin-top: 100px;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
