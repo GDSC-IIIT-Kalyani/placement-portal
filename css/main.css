@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body,
 html {
   margin: 0px;
@@ -52,7 +54,7 @@ a {
 }
 
 #header #nav a.blue-background {
-  background-color: rgb(20, 45, 84) ;
+  background-color: #204584;
   color: white;
   border-radius: 15px;
   padding: 5px 15px;
@@ -78,20 +80,6 @@ a {
 #home > div {
   width: 50%;
   height: 100%;
-}
-/*
-#about-us {
- // margin-top: 100px;
-  min-height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-*/
-#contact-us {
-  background-color: #f6f6fa;
 }
 
 #infrastructure {
@@ -133,4 +121,80 @@ a {
 #infrastructure .infra-icon span {
   font-size: 18px; 
   color: rgb(0, 0, 110);
+}
+
+#contact-us {
+  background-color: white;
+}
+
+#contact-us-card{
+  width: 60vw;
+  height: 30vw;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+#contact-us-heading{
+  position: absolute;
+  top: 3vw;
+  left: 3vw;
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.5vw;
+  color: #616161;
+}
+
+.contactgroupheading {
+  font-size: 2vw;
+  color: #616161;
+}
+
+#address {
+  position: absolute;
+  left: 3vw;
+  top: 12vw;
+  width: 25vw;
+  height: 6vw;
+  font-size: 1vw;
+}
+
+#phone-number {
+  position: absolute;
+  left: 3vw;
+  top: 20vw;
+  width: 25vw;
+  height: 6vw;
+  font-size: 1vw;
+
+}
+
+#email-id {
+  position: absolute;
+  left: 30vw;
+  top: 12vw;
+  width: 25vw;
+  height: 6vw;
+  font-size: 1vw;
+}
+
+#socialbox {
+  position: absolute;
+  left: 57vw;
+  top: 7vw;
+}
+
+.fab-circle {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  background-color: #FF0000;
+  margin: 1vw;
+  position: relative;
+}
+
+.fab-circle i{
+  margin: auto;
 }
