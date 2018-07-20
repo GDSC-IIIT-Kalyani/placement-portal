@@ -168,15 +168,18 @@ a {
 
 #contact-us {
   background-color: white;
+  background-image: url('../img/contact-us-background.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 #contact-us-card{
-  width: 60vw;
+  width: 55vw;
   height: 30vw;
   background-color: #FFFFFF;
   position: absolute;
-  left: 30%;
-  top: 30%;
+  left: 35vw;
+  top: 15vw;
   border-radius: 8px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
@@ -225,19 +228,66 @@ a {
 
 #socialbox {
   position: absolute;
-  left: 57vw;
-  top: 7vw;
+  left: 27vw;
+  top: 19vw;
 }
 
 .fab-circle {
   width: 4vw;
   height: 4vw;
   border-radius: 50%;
-  background-color: #FF0000;
   margin: 1vw;
   position: relative;
+  display: flex;
+  align-items: center;
+  float: left;
 }
 
 .fab-circle i{
   margin: auto;
+  font-size: 2.3vw;
+}
+
+#twitter-fab{
+  background-color: #00BCD4;
+  color: #FFFFFF;
+}
+
+#facebook-fab{
+  background-color: #1565C0;
+  color: #FFFFFF;
+}
+
+#mail-fab{
+  background-color: #8BC34A;
+  color: #FFFFFF;
+}
+
+#google-fab{
+  background-color: #F44336;
+  color: #FFFFFF;
+}
+
+#twitter-fab:hover{
+  background-color: #FFFFFF;
+  color: #00BCD4;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+#facebook-fab:hover{
+  background-color: #FFFFFF;
+  color: #1565C0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+#mail-fab:hover{
+  background-color: #FFFFFF;
+  color: #8BC34A;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+#google-fab:hover{
+  background-color: #FFFFFF;
+  color: #F44336;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
