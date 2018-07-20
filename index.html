@@ -104,42 +104,50 @@
     </div> 
 
     <div id="register" class="section">
-      <img src="img/register_background.JPG" style="width:100%; margin: 120px 0px 75px 0px; height: auto;">
+      <img src="img/register_background.JPG" style="width:100%; position: absolute; bottom: 0px; height: auto;">
       <div id="register-div" style="position: absolute; top: 40px; right: 100px; width: 400px; bottom: 0px; background-color: #f5f5fa ;
       border-top: 8px solid #dddde0; padding: 15px;">
       <div style="font-weight:500; margin: 10px 0px; font-size: 15px; color: rgb(185, 184, 184)">COMPANIES REGISTER HERE</div>
         <form>
           <input type="textbox" class="textbox" placeholder="Company Name" style="width: 100%">
           <input type="textbox" class="textbox" placeholder="Email" style="width: 100%">
-          <div class="tag-box">
-            <div style="margin: 15px 0px 5px 0px;">
-              <div style=" display: inline-block; padding: 5px 10px; 
-              background-color: rgb(24, 46, 82); color: white;">HTML5&nbsp;&nbsp;<i class="fas fa-times"></i></div>
-              <div style=" display: inline-block; padding: 5px 10px; 
-              background-color: rgb(24, 46, 82); color: white;">C&nbsp;&nbsp;<i class="fas fa-times"></i></div>
-              <div style="display: inline-block; padding: 5px 10px; 
-              background-color: rgb(24, 46, 82); color: white;">PHP&nbsp;&nbsp;<i class="fas fa-times"></i></div>
+          <div class="tagsbox">
+            <div class="tags-container" style="margin: 5px 0px 5px 0px;">
+              <div style="margin: 2px 2px; display: inline-block; padding: 5px 10px; 
+              background-color: rgb(192, 192, 192); color: white;">HTML5&nbsp;&nbsp;<i class="fas fa-times"></i></div>
+              <div style="margin: 2px 2px; display: inline-block; padding: 5px 10px; 
+              background-color: rgb(192, 192, 192); color: white;">C&nbsp;&nbsp;<i class="fas fa-times"></i></div>
+              <div style="margin: 2px 2px;display: inline-block; padding: 5px 10px; 
+              background-color: rgb(192, 192, 192); color: white;">PHP&nbsp;&nbsp;<i class="fas fa-times"></i></div>
             </div>
-            <input type="textbox" class="textbox" placeholder="Skills Required" style="margin: 4px 0px; width: 100%">
+            <div style="margin: 4px 0px; position: relative; padding: 0px;">
+              <input type="textbox" class="textbox" placeholder="Skills Required" style=" margin: 0px; width: 100%; padding-right: 50px;">
+              <a href="javascript:void(0)" onclick="tagsBoxes.addTag(this)">
+                <i class="fas fa-plus-square add-icon" style="font-size: 25px;display:block; position: absolute; 
+                padding: 11px 10px; right: 1px; top: 1px; z-index: 2;"></i>
+              </a>          
+            </div>
           </div>
           <input type="textbox" class="textbox" placeholder="Approx. CTC" style="width: 100%">
           <input type="textbox" class="textbox" placeholder="Number of Jobs Available" style="width: 100%">
-          <div class="tagbox">
-            <div style="margin: 15px 0px 5px 0px;">
-              <div style="margin: 2px 0px;display: inline-block; padding: 5px 10px; 
-              background-color: rgb(24, 46, 82); color: white;">Product Manager&nbsp;&nbsp;<i class="fas fa-times"></i></div>
-              <div style="margin: 2px 0px; display: inline-block; padding: 5px 10px; 
-              background-color: rgb(24, 46, 82); color: white;">Software Developer&nbsp;&nbsp;<i class="fas fa-times"></i></div>
-              <div style=" margin: 2px 0px;display: inline-block; padding: 5px 10px; 
-              background-color: rgb(24, 46, 82); color: white;">Security Engineer&nbsp;&nbsp;<i class="fas fa-times"></i></div>
+          <div class="tagsbox">
+            <div class="tags-container" style="margin: 5px 0px 5px 0px;">
+            <div style="margin: 3px;display: inline-block; padding: 5px 10px; 
+              background-color: rgb(192, 192, 192); color: white;">Product Manager&nbsp;&nbsp;<a href="javascript:void(0)" onclick="removeTag(this)"><i class="fas fa-times"></i></a></div>
+              <div style="margin: 3px; display: inline-block; padding: 5px 10px; 
+              background-color: rgb(192, 192, 192); color: white;">Software Developer&nbsp;&nbsp;<a href="javascript:void(0)" onclick="removeTag(this)"><i class="fas fa-times"></i></a></div>
+              <div style="margin: 3px;display: inline-block; padding: 5px 10px; 
+              background-color: rgb(192, 192, 192); color: white;">Security Engineer&nbsp;&nbsp;<a href="javascript:void(0)" onclick="removeTag(this)"><i class="fas fa-times"></i></a></div>
             </div>
             <div style="margin: 4px 0px; position: relative; padding: 0px;">
             <input type="textbox" class="textbox" placeholder="Positions Offering" style=" margin: 0px; width: 100%; padding-right: 50px;">
-            <a href="#">
-              <i class="fas fa-plus-square add-icon" style="font-size: 25px;display:block; position: absolute; padding: 11px 10px; right: 1px; top: 1px; z-index: 2;"></i>
+            <a href="javascript:void(0)" onclick="tagsBoxes.addTag(this)">
+              <i class="fas fa-plus-square add-icon" style="font-size: 25px;display:block; position: absolute; 
+              padding: 11px 10px; right: 1px; top: 1px; z-index: 2;"></i>
             </a>
-            <div>
+            </div>
           </div>
+          <input type="button" class="button" value="Register">
         </form>
       </div>
     </div> 
@@ -148,6 +156,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
- <!--   <script type="text/javascript" src="js/main.js"></script> -->
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
