@@ -174,3 +174,7 @@ a {
   background-color: rgb(73, 89, 117);
 
 }
+
+.add-icon:hover {
+  background-color: #f9f9fc;
+}
