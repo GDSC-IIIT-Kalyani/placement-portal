@@ -105,13 +105,13 @@
 
     <div id="register" class="section">
       <img src="img/register_background.JPG" style="width:100%; position: absolute; bottom: 0px; height: auto;">
-      <div id="register-div" style="position: absolute; top: 40px; right: 100px; width: 400px; bottom: 0px; background-color: #f5f5fa ;
+      <div id="register-div" style="position: absolute; top: 80px; right: 100px; width: 400px; bottom: 0px; background-color: #f5f5fa ;
       border-top: 8px solid #dddde0; padding: 15px;">
       <div style="font-weight:500; margin: 10px 0px; font-size: 15px; color: rgb(185, 184, 184)">COMPANIES REGISTER HERE</div>
         <form>
-          <input type="textbox" class="textbox" placeholder="Company Name" style="width: 100%">
-          <input type="textbox" class="textbox" placeholder="Email" style="width: 100%">
-          <div class="tagsbox">
+          <input id="company-name" type="textbox" class="textbox" placeholder="Company Name" style="width: 100%">
+          <input id="company-email" type="textbox" class="textbox" placeholder="Email" style="width: 100%">
+          <div id="company-skills" class="tagsbox">
             <div class="tags-container" style="margin: 5px 0px 5px 0px;">
               <div style="margin: 2px 2px; display: inline-block; padding: 5px 10px; 
               background-color: rgb(192, 192, 192); color: white;">HTML5&nbsp;&nbsp;<i class="fas fa-times"></i></div>
@@ -128,9 +128,9 @@
               </a>          
             </div>
           </div>
-          <input type="textbox" class="textbox" placeholder="Approx. CTC" style="width: 100%">
-          <input type="textbox" class="textbox" placeholder="Number of Jobs Available" style="width: 100%">
-          <div class="tagsbox">
+          <input id="company-ctc" type="textbox" class="textbox" placeholder="Approx. CTC" style="width: 100%">
+          <input id="company-jobs" type="textbox" class="textbox" placeholder="Number of Jobs Available" style="width: 100%">
+          <div id="company-positions" class="tagsbox">
             <div class="tags-container" style="margin: 5px 0px 5px 0px;">
             <div style="margin: 3px;display: inline-block; padding: 5px 10px; 
               background-color: rgb(192, 192, 192); color: white;">Product Manager&nbsp;&nbsp;<a href="javascript:void(0)" onclick="removeTag(this)"><i class="fas fa-times"></i></a></div>
@@ -147,15 +147,16 @@
             </a>
             </div>
           </div>
-          <input type="button" class="button" value="Register">
+          <input type="button" class="button" onclick="companySignUp()" value="Register">
         </form>
       </div>
     </div> 
 
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

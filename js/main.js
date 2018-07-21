@@ -1,7 +1,7 @@
 var tagsBoxes = {
     el: [],
-    data : [],
-    init : function() {
+    data: [],
+    init: function() {
         this.el = document.getElementsByClassName('tagsbox');
     },
     indexOf: function (val) {
@@ -11,7 +11,7 @@ var tagsBoxes = {
         }
         return -1;    
     },
-    addTag : function (obj) {
+    addTag: function (obj) {
         var box = obj.parentElement.parentElement;
         if (box) {
             var el_index = this.indexOf(box);
@@ -47,6 +47,43 @@ var tagsBoxes = {
             }
         }
     },
+    getTags: function (element) {
+        var el_index = this.indexOf(element);
+        if ( el_index > -1) {
+            return this.data[el_index];
+        }
+        return null;
+    },
 };
 
 tagsBoxes.init();
+
+function companySignUp() {
+    var data = { 
+        "name" : document.getElementById('company-name').value,
+        "email" : document.getElementById('company-email').value,
+        "skills" : tagsBoxes.getTags(document.getElementById('company-skills')),
+        "ctc" : parseInt(document.getElementById('company-ctc').value),
+        "jobs" : parseInt(document.getElementById('company-jobs').value),
+        "positions": tagsBoxes.getTags(document.getElementById('company-positions')),
+    };
+    console.log(data);
+    $.ajax('company_signup.php', {
+        "method" : "POST",
+        "data": { "data" : JSON.stringify(data) },
+        "success": function(data, status, xhr) {
+            alert(xhr.responseText);
+        },
+    });
+  /*  var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            alert(xhr.responseText);
+        }
+    }
+    xhr.open('POST','company_signup.php');
+    console.log(JSON.stringify(data));
+    xhr.send(JSON.stringify(data));*/
+
+}
+
