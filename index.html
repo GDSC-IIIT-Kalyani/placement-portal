@@ -8,6 +8,11 @@
     <meta name="theme-color" content="#204584">
     <meta name="msapplication-navbutton-color" content="#204584">
     <meta name="apple-mobile-web-app-status-bar-style" content="#204584">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.0/Chart.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="header">
@@ -101,7 +106,59 @@
     </div>
 
     <div id="placement-record" class="section">
-      Filler, Placement Records & Charts will go here.
+      <div id="placement-synopsis">
+      	<div id="placement-detail-1">
+      		<table style="width: 100%">
+      			<caption style="font-size: 25px; font-weight: none; text-align: center; background-color: #204584; color: white; padding: 7px; text-transform: uppercase; width: 100%;">Placement Statistics</caption>
+      			<tr style="padding-top: 10px;">
+      				<th>No. of Students registered</th>
+      				<td>40</td>
+      			</tr>
+      			<tr>
+      				<th>No. of Job Offers</th>
+      				<td>40</td>
+      			</tr>
+      			<tr>
+      				<th>Highest Package</th>
+      				<td>10 lpa</td>
+      			</tr>
+      			<tr>
+      				<th>Average Package</th>
+      				<td>3 lpa</td>
+      			</tr>
+      			<tr>
+      				<th>Students going for Higher Studies</th>
+      				<td>2</td>
+      			</tr>
+      			<tr>
+      				<th>Percentage of Students Selected</th>
+      				<td>85%</td>
+      			</tr>
+      			<tr>
+      				<th>Students qualified GATE-2018</th>
+      				<td>12<td>
+      			</tr>
+      			<tr>
+      				<th>Students qualified CAT-2018</th>
+      				<td>1</td>
+      			</tr>
+      			<tr>
+      				<th>Students qualified BARC</th>
+      				<td>1</td>
+      			</tr>
+      		</table>
+      	</div>
+      	<div id="placement-chart">
+      		<!-- <div id='myChart'></div> -->
+      		<canvas id="mycanvas" width="256" height="256"></canvas>
+      	</div>
+      </div>
+      <div style="padding: 50px; font-size: 22px; font-weight: 300;">
+      	IIIT Kalyani is having a successful placement session during 2017-18. Some of the companies where our
+		students got placed are: NDL, FOSSEE, Ittiam, Mihup, Apt Software, Smartprix, Infologitech Systems,
+		Adecco etc. The selection process for some companies are still going on. The students got offers from
+		both on-campus and online/off-campus selection process
+      </div>
     </div>
     <div id="register" class="section">
       <img src="img/register_background.JPG" style="width:100%; margin: 120px 0px 75px 0px; height: auto;">
@@ -180,6 +237,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
- <!--   <script type="text/javascript" src="js/main.js"></script> -->
+    <script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
+	<script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+	ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+ 	<!--   <script type="text/javascript" src="js/main.js"></script> -->
+ 	<script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
