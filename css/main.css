@@ -339,3 +339,16 @@ a {
 #placement-detail-1 th, td {
   padding: 3px;
 }
+
+
+#tb1 caption{
+  margin-bottom: 4vh;
+  font-size: 25px; 
+  font-weight: none;
+  text-align: center; 
+  background-color: #204584; 
+  color: white; 
+  padding: 7px; 
+  text-transform: uppercase; 
+  width: 100%;
+}
