@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*var pizza = [59];
 
 var myConfig = {
@@ -72,29 +72,8 @@ $(document).ready(function(){
   //draw
   var piechart = new Chart(ctx).Pie(data);
 
-
-
 });
 
-
-||||||| merged common ancestors
-var txt = document.getElementById("typewriter").innerHTML;
-var speed = 30;
-var j=0;
-
-function typeWriter() {
-  if (j < txt.length) {
-    document.getElementById("typewriter").innerHTML += txt.charAt(j);
-    j++;
-    setTimeout(typeWriter, speed);
-  }
-}
-
-window.onload = function(){
-  document.getElementById("typewriter").innerHTML = " ";
-  typeWriter();
-};
-=======
 var tagsBoxes = {
     el: [],
     data: [],
@@ -183,5 +162,3 @@ function companySignUp() {
     xhr.send(JSON.stringify(data));*/
 
 }
-
->>>>>>> f7b00c0cd6ef0fc9269665fc607b37815c3a2092

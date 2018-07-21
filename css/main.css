@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body,
 html {
   margin: 0px;
@@ -149,8 +151,7 @@ a {
   //box-shadow: inset 0px 0px 40px -18px rgba(116,133,156,1);
 }
 .button {
-  margin: 15px 0px;
-  width: 100%;
+  border-radius: 15px;
   background-color: rgb(20, 45, 84);
   padding: 10px 15px;
   outline : none;
@@ -161,7 +162,7 @@ a {
   border: 1px solid rgb(24, 46, 82);
 }
 .button:active {
-  background-color: rgb(0, 17, 46);
+  background-color: rgb(73, 89, 117);
 
 }
 
@@ -289,7 +290,6 @@ a {
   background-color: #FFFFFF;
   color: #F44336;
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-<<<<<<< HEAD
 }
 
 #chartdiv {
@@ -338,11 +338,4 @@ a {
 
 #placement-detail-1 th, td {
   padding: 3px;
-||||||| merged common ancestors
-=======
-}
-
-.add-icon:hover {
-  background-color: #f9f9fc;
->>>>>>> f7b00c0cd6ef0fc9269665fc607b37815c3a2092
 }
