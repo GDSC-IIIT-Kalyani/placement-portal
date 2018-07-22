@@ -390,13 +390,13 @@ a {
 }
 
 #slider figure img{
-    width:35%;
+    width:50%;
     float:left;
 }
 
 #slider figure{
     position:relative;
-    width:270%;
+    width:300%;
     margin:0;
     left:50px;
     text-align:left;
