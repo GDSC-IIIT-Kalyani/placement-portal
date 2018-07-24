@@ -103,7 +103,7 @@ var tagsBoxes = {
                     var newTag = document.createElement('div');
                     newTag.setAttribute("data-tagname", value);
                     newTag.style = "margin: 3px 3px; display: inline-block; padding: 5px 10px; \
-                    background-color: rgb(24, 46, 82); color: white;";
+                    background-color: rgb(24, 46, 82); color: white;border-radius: 6px;";
                     newTag.innerHTML = value + '&nbsp;&nbsp;<a href="javascript:void(0)" onclick="tagsBoxes.removeTag(this)"><i class="fas fa-times"></i></a>';
                     tagContainer.appendChild(newTag);
                 }
