@@ -1,37 +1,3 @@
-
-/*var pizza = [59];
-
-var myConfig = {
-  "type":"pie3d",
-  "title":{
-    "text":"Placement"
-  },
-  "tooltip": {
-      "text": "On %t, node %node-index is positioned at %kt (X) and %vt (Y)."
-  },
-  "series":[
-    {"values":[12],
-      "text":""},
-    {"values":[1],
-      "text":""},
-    {"values":[1],
-      "text":""},
-    {"values":[32],
-      "text":""},
-    {"values":[44],
-      "text":""},
-    {"values":[2],
-      "text":""}
-  ]
-};
- 
-zingchart.render({ 
-  id : 'myChart', 
-  data : myConfig, 
-  height: 400, 
-}); */
-
-
 $(document).ready(function(){
   var ctx = $("#mycanvas").get(0).getContext("2d");
   // pie chart data
@@ -134,6 +100,35 @@ var tagsBoxes = {
 
 tagsBoxes.init();
 
+/* Implementation for tabs */
+function switchToTabPane(el, index) {
+    var container = el.parentElement.parentElement;
+    var tabPanes = container.querySelectorAll(".tab-content .tab-pane");
+    for(var i=0; i<tabPanes.length; i++) {
+        tabPanes[i].style['display'] = 'none';
+    }
+    container.querySelector(".tab-content .tab-pane[data-paneid='" + String(index) + "']").style["display"] = "block";
+    var tabnavs = el.parentElement.querySelectorAll('.tab')
+    for (var i=0; i<tabnavs.length; i++) {
+        tabnavs[i].classList.remove("active");
+    }
+    el.classList.add('active');
+}
+
+function closeForm() {
+    document.querySelector('.complete-page-overlay').classList.add("hidden");
+    var forms = document.querySelectorAll('.form-box');
+    for (var i=0; i<forms.length; i++) {
+        forms[i].style['display'] = 'none';
+    }
+}
+
+function showLoginForm() {
+    document.querySelector('.complete-page-overlay').classList.remove("hidden");
+    document.querySelector('.complete-page-overlay .form-box.login-box').style['display'] = "block";
+    console.log("done");
+}
+
 function companySignUp() {
     var data = { 
         "name" : document.getElementById('company-name').value,
@@ -151,14 +146,4 @@ function companySignUp() {
             alert(xhr.responseText);
         },
     });
-  /*  var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            alert(xhr.responseText);
-        }
-    }
-    xhr.open('POST','company_signup.php');
-    console.log(JSON.stringify(data));
-    xhr.send(JSON.stringify(data));*/
-
 }

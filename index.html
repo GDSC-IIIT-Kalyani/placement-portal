@@ -24,7 +24,7 @@
         <a href="#">Placement Record</a>
         <a href="#">Contact Us</a>
         <a href="#">Register</a>
-        <a href="#" class="blue-background">Login</a>
+        <a href="javascript:void(0)" onclick="showLoginForm()" class="blue-background">Login</a>
       </div>
     </div>
     <div id="home" class="section">
@@ -265,7 +265,7 @@
         </form>
       </div>
     </div>
-        <div id="contact-us" class="section">
+    <div id="contact-us" class="section">
       <div id="contact-us-card">
         <span id="contact-us-heading">
           Contact Us
@@ -306,7 +306,38 @@
           </div>
 				</div>
       </div>
-    </div> 
+    </div>
+
+    <div class="complete-page-overlay hidden">
+    <div class="form-box login-box">
+      
+      <div class="close-bar">
+        <a href="javascript:void(0)" onclick="closeForm()"><i class="fas fa-times"></i></a>
+      </div>
+
+      <div class="tab-bar">
+        <div class="tab active" onclick="switchToTabPane(this, 0)" >Company</div>
+        <div class="tab" onclick="switchToTabPane(this, 1)" >Student</div>
+      </div>
+
+      <div class="tab-content">
+        <div class="tab-pane" data-paneid="0" style="padding: 40px 50px; text-align: center;">
+          <img src="img/enterprise.png" style="user-select:none; width: 80px; height: 80px; margin-bottom: 10px; padding: 10px; border: 1.5px solid rgb(32, 67, 128); border-radius : 5px;">
+          <input type="textbox" class="textbox" placeholder="Company Email" style="margin: 10px 0px; width: 100%;">
+          <input type="password" class="textbox" placeholder="Password" style="margin: 10px 0px; width: 100%;">
+          <input type="button" class="button" onclick="companySignUp()" style="width:100%; margin: 10px 0px;" value="Login">
+        </div>
+        <div class="tab-pane" data-paneid="1" style="display: none; padding: 40px 50px; text-align: center;">
+          <img src="img/graduate.png" style="user-select:none; width: 80px; height: 80px; margin-bottom: 10px; padding: 10px; border: 1.5px solid rgb(32, 67, 128); border-radius : 5px;"">
+          <input type="textbox" class="textbox" placeholder="Student Email" style="margin: 10px 0px; width: 100%;">
+          <input type="password" class="textbox" placeholder="Password" style="margin: 10px 0px; width: 100%;">
+          <input type="button" class="button" onclick="companySignUp()" style="width:100%; margin: 10px 0px;" value="Login">
+        </div>  
+      </div>
+    
+    </div>
+    </div>
+
     <link rel="stylesheet" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.0/Chart.min.js"></script>
@@ -314,7 +345,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
- 	<script type="text/javascript" src="js/main.js"></script>
+ 	  <script type="text/javascript" src="js/main.js"></script>
  <!--   <script type="text/javascript" src="js/main.js"></script> -->
   </body>
 </html>
