@@ -33,10 +33,16 @@ $(document).ready(function(){
       color: "#F4D03F",
       highlight: "#B7950B",
       label: "Higher Studies"
+    },
+    {
+      value: 40,
+      color: "#008000",
+      highlight: "#ADFF2F",
+      label: "Total Registered"
     }
   ];
   //draw
-  var piechart = new Chart(ctx).Pie(data);
+  var piechart = new Chart(ctx).Doughnut(data);
 
 });
 
