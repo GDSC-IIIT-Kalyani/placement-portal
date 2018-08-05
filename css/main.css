@@ -563,7 +563,7 @@ table {
 #footer {
   width: 100%;
   height: 35vw;
-  background-color: #050538;
+  background-color: #181B3A;
   display: flex;
   position: relative;
   justify-content: center;
@@ -572,7 +572,7 @@ table {
 #footer-container-up {
   width: 60vw;
   height:10vw;
-  border-bottom: 1px solid #F5F5F5;
+  border-bottom: 1px solid #757575;
   position: relative;
 }
 
@@ -586,18 +586,18 @@ table {
 }
 
 #footer-button {
-  width: 13vw;
+  width: 10vw;
   height: 2.8vw;
   display: flex;
   background-color: #2962FF;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Hammersmith One', sans-serif;
   font-size: 1vw;
   align-items: center;
   justify-content: center;
-  color: #FFFFFF;
+  color: #F0F0F0;
   border-radius: 1.4vw;
   position: absolute;
-  left: 47vw;
+  left: 50vw;
   top: 3.2vw;
   font-weight: bold;
   letter-spacing: 0.1vw;
@@ -608,16 +608,31 @@ table {
   height: 2.8vw;
   display: flex;
   background-color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Hammersmith One', sans-serif;
   font-size: 1vw;
   align-items: center;
   justify-content: center;
-  color: #000000;
+  color: #616161;
   border-radius: 1.4vw;
   position: absolute;
-  left: 27vw;
+  left: 30vw;
   top: 3.2vw;
   padding: 1vw;
+  outline: none;
+  border: none;
+}
+
+#footer-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #E0E0E0;
+}
+#footer-input::-moz-placeholder { /* Firefox 19+ */
+  color: #E0E0E0;
+}
+#footer-input:-ms-input-placeholder { /* IE 10+ */
+  color: #E0E0E0;
+}
+#footer-input:-moz-placeholder { /* Firefox 18- */
+  color: #E0E0E0;
 }
 
 #footer-input:focus {
@@ -666,7 +681,7 @@ table {
 .footer-subsection-heading {
   font-family: 'Hammersmith One', sans-serif;
   font-size: 1.3vw;
-  color: #F5F5F5;
+  color: #FFFFFF;
   letter-spacing: 0.08vw;
 }
 
@@ -674,14 +689,35 @@ table {
   font-family: 'Hammersmith One', sans-serif;
   font-size: 0.85vw;
   padding-top: 0.5vw;
-  color: #F5F5F5;
+  color: #757575;
   line-height: 1.5vw;
 }
 
 #footer-credits {
   font-family: 'Hammersmith One', sans-serif;
   font-size: 0.8vw;
-  color: #F5F5F5;
+  color: #757575;
   position: absolute;
-  bottom: 1vw;
+  bottom: 1.5vw;
+}
+
+#footer-icons {
+  font-size: 1.3vw;
+  color: #757575;
+  padding-top: 2vw;
+}
+
+#footer-icons>i {
+  padding: 0.2vw;
+}
+
+#footer-logo {
+  position: absolute;
+  width: 15vw;
+  background-image: url('../img/footer-logo.svg');
+  height: 10vw;
+  background-repeat: no-repeat;
+  top: 15vw;
+  left: 10vw;
+  background-size: contain;
 }
