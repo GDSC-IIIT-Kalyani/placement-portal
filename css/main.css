@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Arvo:700');
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
 
 body,
 html {
@@ -90,15 +92,15 @@ a {
 }
 
 #infrastructure .text-div {
-  width: 40%; 
+  width: 40%;
   padding: 10px 50px;
   line-height: 200%;
 }
 
 #infrastructure .icons-div {
-  display: flex; 
-  flex-direction: row; 
-  justify-content: center; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   width: 60%;
@@ -127,7 +129,7 @@ a {
 }
 
 #infrastructure .infra-icon span {
-  font-size: 18px; 
+  font-size: 18px;
   color: rgb(0, 0, 110);
 }
 
@@ -136,7 +138,7 @@ a {
 }
 
 /* Styling for input elements. As this styling will be consistent across the entire website, it
-  will make sense to move it to a new `input.css`, down the line. 
+  will make sense to move it to a new `input.css`, down the line.
 */
 .textbox {
   margin: 8px 0px;
@@ -187,18 +189,18 @@ a {
 }
 
 .form-box {
-  border-radius: 6px; 
+  border-radius: 6px;
   background-color: #f6f6fa;
   border: 1px solid rgb(156, 156, 156);
 }
 
 .form-box .close-bar {
-  border-radius: 6px; 
-  text-align: right; 
-  padding: 0px 30px; 
-  height: 60px; 
-  background-color: white; 
-  line-height: 70px; 
+  border-radius: 6px;
+  text-align: right;
+  padding: 0px 30px;
+  height: 60px;
+  background-color: white;
+  line-height: 70px;
   font-size: 25px;
   color: rgb(189, 189, 189);
 }
@@ -208,13 +210,13 @@ a {
 }
 
 .form-box.login-box {
-  width: 550px; 
-  height: 500px; 
+  width: 550px;
+  height: 500px;
 }
 
 /*
   CSS for tabs. I want to make it generic down the line. I guess, I will be shifting the CSS & JS for tabs
-  to separte files - `tabs.css` & `tabs.js`.   
+  to separte files - `tabs.css` & `tabs.js`.
 */
 .tab-bar {
   height: 60px;
@@ -225,18 +227,18 @@ a {
 .tab-bar .tab {
   height: 100%;
   width: 50%;
-  float:left; 
-  font-size: 20px; 
+  float:left;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: rgb(123, 126, 129);
-  border-bottom: 1px solid #ebecf0; 
+  border-bottom: 1px solid #ebecf0;
   cursor: pointer;
 }
 
 .tab-bar .tab.active {
-  border-bottom: 2px solid rgb(20, 45, 84); 
+  border-bottom: 2px solid rgb(20, 45, 84);
   color : rgb(20, 45, 84);
   cursor: default;
 }
@@ -371,7 +373,7 @@ a {
 #chartdiv {
   width: 100%;
   height: 500px;
-} 
+}
 
 #placement-detail-1 {
   border: 1px solid #204584 ;
@@ -419,13 +421,13 @@ a {
 
 #tb1 caption{
   margin-bottom: 4vh;
-  font-size: 25px; 
+  font-size: 25px;
   font-weight: none;
-  text-align: center; 
-  background-color: #204584; 
-  color: white; 
-  padding: 7px; 
-  text-transform: uppercase; 
+  text-align: center;
+  background-color: #204584;
+  color: white;
+  padding: 7px;
+  text-transform: uppercase;
   width: 100%;
 }
 
@@ -455,14 +457,14 @@ table {
   padding-left: 10%;
   font-weight: bold;
   letter-spacing: 1px;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 
 .column2 {
   width: 22%;
   font-weight: bold;
   letter-spacing: 1px;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 
 .column3 {
@@ -502,14 +504,14 @@ table {
 }
 
 .table100.ver5 .table100-body tr {
-  overflow: hidden; 
+  overflow: hidden;
   border-bottom: 1px solid #fff;
   border-radius: 10px;
 }
 
-.table100.ver5 .table100-body table { 
-  border-collapse: separate; 
-  border-spacing: 0 5px; 
+.table100.ver5 .table100-body table {
+  border-collapse: separate;
+  border-spacing: 0 5px;
 }
 .table100.ver5 .table100-body td {
     border: solid 1px transparent;
@@ -519,13 +521,13 @@ table {
 }
 .table100.ver5 .table100-body td:first-child {
     border-left-style: solid;
-    border-top-left-radius: 10px; 
+    border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 .table100.ver5 .table100-body td:last-child {
     border-right-style: solid;
-    border-bottom-right-radius: 10px; 
-    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .table100.ver5 tr:hover td {
@@ -555,4 +557,131 @@ table {
 .js-pscroll {
   position: relative;
   overflow: hidden;
+}
+
+
+#footer {
+  width: 100%;
+  height: 35vw;
+  background-color: #050538;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+#footer-container-up {
+  width: 60vw;
+  height:10vw;
+  border-bottom: 1px solid #F5F5F5;
+  position: relative;
+}
+
+#footer-heading {
+  font-family: 'Arvo', serif;
+  font-size: 2.7vw;
+  color: #FFFFFF;
+  position: absolute;
+  left: 0vw;
+  top: 3vw;
+}
+
+#footer-button {
+  width: 13vw;
+  height: 2.8vw;
+  display: flex;
+  background-color: #2962FF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1vw;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border-radius: 1.4vw;
+  position: absolute;
+  left: 47vw;
+  top: 3.2vw;
+  font-weight: bold;
+  letter-spacing: 0.1vw;
+}
+
+#footer-input {
+  width: 17vw;
+  height: 2.8vw;
+  display: flex;
+  background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1vw;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  border-radius: 1.4vw;
+  position: absolute;
+  left: 27vw;
+  top: 3.2vw;
+  padding: 1vw;
+}
+
+#footer-input:focus {
+  border: 2px solid blue;
+}
+
+#footer-container-down {
+  position: absolute;
+  width: 80vw;
+  height: 25vw;
+  top: 10vw;
+}
+
+#footer-address {
+  width: 10vw;
+  position: absolute;
+  color: #FFFFFF;
+  left: 34vw;
+  top: 5vw;
+}
+
+#footer-quick-links {
+  width: 10vw;
+  position: absolute;
+  color: #FFFFFF;
+  left: 46vw;
+  top: 5vw;
+}
+
+#footer-explore {
+  width: 10vw;
+  position: absolute;
+  color: #FFFFFF;
+  left: 58vw;
+  top: 5vw;
+}
+
+#footer-contact-us {
+  width: 10vw;
+  position: relative;
+  color: #FFFFFF;
+  left: 70vw;
+  top: 5vw;
+}
+
+.footer-subsection-heading {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 1.3vw;
+  color: #F5F5F5;
+  letter-spacing: 0.08vw;
+}
+
+.footer-subsection-text {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 0.85vw;
+  padding-top: 0.5vw;
+  color: #F5F5F5;
+  line-height: 1.5vw;
+}
+
+#footer-credits {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 0.8vw;
+  color: #F5F5F5;
+  position: absolute;
+  bottom: 1vw;
 }
