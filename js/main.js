@@ -154,7 +154,7 @@ function companySignUp() {
     });
 }
 
-<!-- Smooth internal link scroll -->
+/* Smooth internal link scroll */
 $(document).ready(function(){
   $("a").on('click', function(event) {
     if (this.hash !== "") {
