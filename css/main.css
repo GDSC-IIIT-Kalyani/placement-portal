@@ -38,29 +38,60 @@ a {
   width: 25%;
 }
 
-#header #nav {
+#header .nav {
   margin: 0px;
   width: 75%;
   text-align: right;
 }
 
-#header #nav a {
+#header .nav a, #mobile-menu a {
   display: inline-block;
   padding: 5px 15px;
   border-radius: 15px;
   line-height: 20px;
 }
 
-#header #nav a:hover {
+#header .nav a:hover {
   background-color: rgb(248, 248, 248) ;
 }
 
-#header #nav a.blue-background {
+#header .nav a.blue-background {
   background-color: #204584;
   color: white;
   border-radius: 15px;
   padding: 5px 15px;
   margin-left: 20px;
+}
+
+#header #nav-mobile {
+  display: none;
+}
+
+#mobile-menu {
+  background-color: rgb(255, 255, 255);
+  position: fixed; top: 0px; left: 0px; height: 100%; width: 100%; z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#mobile-menu a {
+  user-select: none;
+  padding: 5px 15px;
+  border-radius: 15px;
+  line-height: 20px;
+  margin: 8px;
+}
+
+#mobile-menu a:hover {
+  background-color: rgb(248, 248, 248) ;
+}
+
+#mobile-menu a.blue-background {
+  color: white;
+  background-color: #204584;
 }
 
 .section {
@@ -72,6 +103,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: 75px 0px 50px 0px;
 }
 
 #home {
@@ -82,6 +114,28 @@ a {
 #home > div {
   width: 50%;
   height: 100%;
+}
+
+#home .home-text {
+  padding: 10px 50px;
+}
+
+#about .about-text {
+  width: 50%; 
+  padding: 10px 50px;
+}
+
+#about .about-img {
+  text-align: center;
+  width: 50%; 
+  padding: 10px 50px 10px 0px;
+}
+
+#about .about-img img {
+  width: 100%; 
+  height: auto; 
+  opacity: 0.8; 
+  border: 25px solid #f6f6fa;
 }
 
 #infrastructure {
@@ -132,6 +186,41 @@ a {
   font-size: 18px;
   color: rgb(0, 0, 110);
 }
+
+.messagebox {
+  width: 50%; 
+  margin: 50px 30px;
+}
+
+.messagebox .title-bar {
+  height: 50px; 
+  background-color: #204584; 
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif; 
+  font-weight: 300; 
+  font-size: 25px; 
+  text-align: right; 
+  padding: 0px 30px; 
+  line-height: 50px;
+}
+
+.messagebox .content {
+  display: flex; 
+  flex-direction: row;
+}
+
+.messagebox .content .text {
+  width: 100%;
+  background-color: #eaeaea; 
+  padding: 40px;
+}
+
+.messagebox .content .img-div {
+  width: 320px; 
+  padding-top: 40px; 
+  background-color: #d1d3d4;
+}
+
 
 #register {
   border : none;
@@ -394,6 +483,8 @@ a {
   padding : 20px 20px;
   width: 100%;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -720,4 +811,101 @@ table {
   top: 15vw;
   left: 10vw;
   background-size: contain;
+}
+
+@media only screen and (max-width:1000px) {
+  #header #nav {
+    display: none;
+  }
+
+  #header #nav-mobile {
+    display: block;
+  }
+  
+  #placement-synopsis {
+    flex-direction: column;
+  }
+
+  #placement-detail-1{
+    width: 80%;
+  }
+  
+  #about {
+    flex-direction: column-reverse;
+  }
+
+  #about .about-text {
+    width: 100%; 
+  }
+  
+  #about .about-img {
+    width: 100%; 
+    padding: 10px 30px;
+  }
+
+  #infrastructure {
+    flex-direction: column;
+  }
+
+  #infrastructure .text-div {
+    width: 100%;
+    padding: 10px 50px;
+    line-height: 200%;
+  }
+  
+  #infrastructure .icons-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+
+  #message {
+    flex-direction: column;
+  }
+
+  .messagebox {
+    width: 92%;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  #header {
+    height: 60px;
+    padding: 0px 20px;
+  }
+
+  #home {
+    flex-direction: column;
+  }
+
+  #home .home-text {
+    padding: 10px 25px;
+  }
+
+  #home > div {
+    width: 100%;
+  }
+
+  .messagebox .title-bar {
+    height: auto;
+  }
+
+  #slider figure img {
+    max-height: 35px;
+    margin: 15px 10px;
+  }
+
+  #about .about-img {
+    width: 100%; 
+    padding: 10px 10px;
+  }
+
+  #about .about-img img {
+    border: 15px solid #f6f6fa;
+  }
+
 }

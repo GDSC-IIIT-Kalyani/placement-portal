@@ -42,7 +42,61 @@ $(document).ready(function(){
     }
   ];
   //draw
-  var piechart = new Chart(ctx).Doughnut(data);
+  var piechart = new Chart(ctx, {
+	type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [
+						12,
+						1,
+                        32,
+                        44,
+                        2,
+                        40,
+					],
+					backgroundColor: [
+                        "cornflowerblue",
+                        "Chocolate",
+                        "darkorange",
+                        "#F4D03F",
+                        "#008000",
+                        "#5B2C6F",
+                    ],
+                    sd: [
+                        "lightskyblue",
+                        "papayawhip",
+                        "orange",
+                        "#5B2C6F",
+                        "#B7950B",
+                        "#ADFF2F",
+                    ],
+					label: 'Placement Statistics'
+				}],
+				labels: [
+					"Qualified for GATE-2018",
+					"Qualified for CAT-2018",
+					"Total Students Selected",
+					"Total Job Offers",
+                    "Higher Studies",
+                    "Total Registered",
+				]
+			},
+			options: {
+				responsive: true,
+				legend: {
+					position: 'top',
+				},
+				title: {
+					display: true,
+					text: 'Placement Statistics'
+				},
+				animation: {
+					animateScale: true,
+					animateRotate: true
+				}
+			},
+    }
+);
 
 });
 
@@ -64,6 +118,11 @@ var tagsBoxes = {
         if (box) {
             var el_index = this.indexOf(box);
             if (el_index > -1) {
+                var placeholders = box.querySelectorAll('.tag.placeholder');
+                console.log(placeholders);
+                for (var i=0; i < placeholders.length; i++) {
+                    placeholders[i].style['display'] = 'none';
+                }
                 var value = box.querySelector('input[type="textbox"]').value;
                 console.log(value);
                 if (value) {

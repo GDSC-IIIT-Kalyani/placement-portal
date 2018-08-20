@@ -13,11 +13,11 @@
   <body>
     <div id="header">
       <div id="logo-holder">
-        <div id="logo" style="height:50px;">
-          <img src="img/logo.png" style="float:left; height: 90%; width: auto;">
+        <div id="logo" style="height:50px; display: flex; align-items: center;">
+          <img src="img/logo.png" style="height: 90%; width: auto;">
         </div>
       </div>
-      <div id="nav">
+      <div id="nav" class="nav">
         <a href="#home">Home</a>
         <a href="#about">About Us</a>
         <a href="#infrastructure">Infrastructure</a>
@@ -26,10 +26,14 @@
 	      <a href="register.html">Register</a>
         <a href="javascript:void(0)" onclick="showLoginForm()"  class="blue-background">Login</a>
       </div>
+
+      <div id="nav-mobile" class="nav">
+        <a href="javascript:void(0)" onclick="$('#mobile-menu').css('display','flex')"  class="blue-background">Menu</a>
+      </div>
     </div>
     <div id="home" class="section">
       <img src="img/background.svg" style="position: absolute; top: 0px; right: 0px; height: 120%; z-index: -1;">
-      <div style="padding: 10px 50px;">
+      <div class="home-text">
         <span style="font-size: 55px; font-weight: bold;">Placement Portal</span><br>
         <span style="font-size: 22px; font-weight: 300;">Passion is the difference between having a job <br> or having a career.</span><br><br><br>
         <a href="#" style="display: inline-block;background-color: rgb(20, 45, 84) ;padding: 10px 0px; border-radius: 6px;
@@ -45,7 +49,7 @@
       </div>
     </div>
     <div id="about" class="section">
-      <div style="width: 50%; padding: 10px 50px;">
+      <div class="about-text">
         <span style="font-size: 40px; font-weight: bold;">Indian Institute of Information Technology</span><br><br>
         <span style="font-size: 22px; font-weight: 300; line-height: 150%;">
           is set up at Kalyani,
@@ -56,10 +60,8 @@
           and Prof. Anupam Basu, Professor, Department of Computer Science and Engineering, IIT Kharagpur as Executive Director/Professor-In-Charge.
         </span>
       </div>
-      <div style="width: 50%; padding: 10px 50px 10px 0px;">
-        <img src="https://lh3.ggpht.com/p/AF1QipNMxnZbJNMowgX_OeMr5bq87G2spf9uGn0bUkWc=s1536" style="
-
-        width:100%; height: auto; opacity: 0.8; border: 25px solid #f6f6fa;">
+      <div class="about-img">
+        <img src="https://lh3.ggpht.com/p/AF1QipNMxnZbJNMowgX_OeMr5bq87G2spf9uGn0bUkWc=s1536">
       </div>
     </div>
 
@@ -105,28 +107,13 @@
       </div>
     </div>
 
-    <div id="tpo" class="section">
-      <!-- <div style="width: 50%; padding: 10px 50px;">
-        <span style="font-size: 40px; font-weight: bold;">Training and Placement</span><br><br>
-        <span style="font-size: 22px; font-weight: 300; line-height: 150%;">
-          The Institute maintains an active office of Training and Placement to look after the placement of the students.<br><br><b>
-									Training and Placement Officer</b><br>
-								<h4>Mr. Sudeep Chowdhury</h4>
-									Ph: +91-9836075844,<br>
-									Email: sudeep@iiitkalyani.ac.in,<br>
-										   placement@iiitkalyani.ac.in
-        </span>
-      </div>
-      <div style="width: 50%; padding: 10px 50px 10px 0px;">
-        <img src="img/img-tpo.png" style="width:100%; height: auto; border: 50px solid #f6f6fa; border-radius: 50%;">
-      </div> -->
-      <div class="message" style="width: 50%; margin: 50px 30px;">
-        <div class="title-bar" style="height: 50px; background-color: #204584; color: white;
-        font-family: 'Roboto Condensed', sans-serif; font-weight: 300; font-size: 25px; text-align: right; padding: 0px 30px; line-height: 50px;">
+    <div id="message" class="section">
+      <div class="messagebox">
+        <div class="title-bar">
           From the Director's Desk
         </div>
-        <div class="content" style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start;">
-          <div class="text" style="width: 100%; height: 800px; background-color: #eaeaea; padding: 40px;">
+        <div class="content">
+          <div class="text">
               It is my pleasure to introduce you to one of the youngest and vibrant technological institutes in Eastern India,
               <b>Indian Institute of Information Technology, Kalyani, West Bengal.</b>
               <br><br>
@@ -149,7 +136,7 @@
               <br><br>
               We look forward to build a long lasting and mutually beneficial relationship with you.
           </div>
-          <div class="img-div" style="width: 320px; padding-top: 40px; height: 800px; background-color: #d1d3d4;">
+          <div class="img-div">
             <img src="img/dire.jpg" style="width: 90%;"><br><br>
             <div style="padding-left: 10px;">
               <span style="font-size: 17px; font-weight: bold;">Prof. Partha P. Chakrabarti</span><br>
@@ -159,14 +146,13 @@
           </div>
         </div>
       </div>
-      <div class="message" style="width: 50%; margin: 50px 30px;">
-          <div class="title-bar" style="height: 50px; background-color: #204584; color: white;
-          font-family: 'Roboto Condensed', sans-serif; font-weight: 300; font-size: 25px; text-align: right; padding: 0px 30px; line-height: 50px;">
+      <div class="messagebox" >
+          <div class="title-bar" >
             From Training and Placement Office
           </div>
-          <div class="content" style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start;">
-            <div class="text" style="width: 100%; height: 800px; background-color: #eaeaea; padding: 40px;">
-                It is my pleasure to introduce you with one of the youngest and vibrant technological institutes in Eastern India,
+          <div class="content" >
+            <div class="text">
+                It is my pleasure to introduce you to one of the youngest and vibrant technological institutes in Eastern India,
                 <b>Indian Institute of Information Technology, Kalyani, West Bengal.</b>
                 <br><br>
                 IIIT, Kalyani has been set up by <b>Government of India (MHRD)</b>, <b>Government of West Bengal</b> and Industry Partners on a N-PPP basis.
@@ -174,73 +160,37 @@
                 <br><br>
                 The institute is located in the calm, peaceful, serene city of Kalyani which is within an hour's drive from the bustling metropolitan city of Kolkata.
                 <br><br>
-                The major objective of IIIT, Kalyani is to set up a model of Education which can produce best-in-class human resources in IT
+                The major objective of IIIT, Kalyani is to set up a model of education which can produce best-in-class human resources in IT
                 and harnessing the multidimensional facets of IT in various domains. The institute will evolve into a world-class academic institution
-                with the highest quality of educaction and research facilities.
+                with the highest quality of education and research facilities.
                 <br><br>
-                Eastablished in the year 2014 the "Newness" factor of IIIT Kalyani and its close collaboration with its mentor Institute,
-                <b>IIT Kharagpur</b>, the first and largest IIT, aloows us to be constantly dynamic in our curriculum. We enjoy the flexibility to quickly respond
-                to these rapidly changing global socio-economic conditions and can efficiently adapt the best practices of leading Technical Institutes.
-                We consider this agility essential for Technical Education today.
+                Established in the year 2014 the "Newness" factor of IIIT Kalyani and its close collaboration with its mentor institute,
+                <b>IIT Kharagpur</b>, the first and the largest IIT, allows us to be constantly dynamic in our curriculum. We enjoy the flexibility to quickly respond
+                to the rapidly changing global socio-economic conditions and can efficiently adapt the best practices of leading technical institutes.
+                We consider this agility essential for technical education today.
                 <br><br>
-                With the <b>NASSCOM Head of Eastern Region</b>, <b>FICCI</b>, <b>CII</b> associated with this institute the students will have an
+                With <b>NASSCOM</b>, <b>FICCI</b>, <b>CII</b> associated with this institute the students will have an
                 advantage in getting internships in major industries of the country.
                 <br><br>
-                We look forward to build a long lasting and mutual beneficial relationship with you.
+                We look forward to build a long lasting and mutually beneficial relationship with you.
             </div>
-            <div class="img-div" style="width: 320px; padding-top: 40px; height: 800px; background-color: #d1d3d4;">
-              <img src=" img/img-tpo.png " style="width: 90%;"><br><br>
+            <div class="img-div">
+              <img src="img/img-tpo.png" style="width: 90%;"><br><br>
               <div style="padding-left: 10px;">
-                <span style="font-size: 17px; font-weight: bold;">Mr. Sudeep Chowdhury</span><br>
-                Training and Placement <br>Officer, IIIT Kalyani
+                <span style="font-size: 17px; font-weight: bold;">Prof. Partha P. Chakrabarti</span><br>
+                Director, IIT Kharagpur <br>
+                Mentor Director, IIIT Kalyani
               </div>
             </div>
           </div>
-      </div>
+        </div>
+  
     </div>
 
     <div id="placement-record" class="section">
+      <span style="font-size: 40px; font-weight: bold;">Placement Statistics</span><br><br>
       <div id="placement-synopsis">
       	<div id="placement-detail-1">
-      		<!-- <table style="width: 100%;" id="tb1">
-      			<caption style="font-size: 25px; font-weight: none; text-align: center; background-color: #204584; color: white; padding: 7px; text-transform: uppercase; width: 100%;">Placement Statistics</caption>
-      			<tr style="padding-top: 10px;">
-      				<th>No. of Students registered</th>
-      				<td>40</td>
-      			</tr>
-      			<tr>
-      				<th>No. of Job Offers</th>
-      				<td>40</td>
-      			</tr>
-      			<tr>
-      				<th>Highest Package</th>
-      				<td>10 lpa</td>
-      			</tr>
-      			<tr>
-      				<th>Average Package</th>
-      				<td>3 lpa</td>
-      			</tr>
-      			<tr>
-      				<th>Students going for Higher Studies</th>
-      				<td>2</td>
-      			</tr>
-      			<tr>
-      				<th>Percentage of Students Selected</th>
-      				<td>85%</td>
-      			</tr>
-      			<tr>
-      				<th>Students qualified GATE-2018</th>
-      				<td>12<td>
-      			</tr>
-      			<tr>
-      				<th>Students qualified CAT-2018</th>
-      				<td>1</td>
-      			</tr>
-      			<tr>
-      				<th>Students qualified BARC</th>
-      				<td>1</td>
-      			</tr>
-      		</table> -->
       		<div class="table100 ver5 m-b-110">
 
       				<div class="table100-body js-pscroll">
@@ -309,21 +259,22 @@
       		<canvas id="mycanvas" width="300" height="300"></canvas>
       	</div>
       </div>
-      <div style="padding: 20px 50px; font-size: 22px; font-weight: 300;margin: 20px 0px;">
-      	IIIT Kalyani had a successful placement session during 2017-18. Some of the companies where our
-		students got placed are: NDL, FOSSEE, Ittiam, Mihup, Apt Software, Smartprix, Infologitech Systems,
-		Adecco etc. The students got offers from both on-campus and online/off-campus selection process.
-		Students even qualified for GATE, CAT and BARC and some have went to pursue higher studies in IITs.
+      <div style="padding: 20px 50px; font-size: 22px; font-weight: 300;margin: 20px 0px; line-height: 40px;">
+        <ul>
+          <li>IIIT Kalyani had a successful placement session during 2017-18.</li>
+          <li>Students got offers from both on-campus and online/off-campus selection process.</li>
+          <li>Some students even qualified for GATE, CAT and BARC and some have went to pursue higher studies in IITs.</li>
+        </ul>
       </div>
       <a href="#" style="display: inline-block;background-color: rgb(20, 45, 84) ;padding: 10px 45px; border-radius: 6px;
         color: white;
         font-size: 22px; font-weight: 300;">Placement Synopsis&nbsp;&nbsp;<i class="fas fa-download"></i></a>
     </div>
 	  <div class="container">
-      <div style="padding: 50px; font-size: 40px; font-weight: bold; text-align: center;">
+      <div style="padding: 30px; font-size: 35px; font-weight: bold; text-align: center;">
         Past Recruiters
       </div>
-    <div id="slider">
+    <div id="slider" style="margin-bottom: 50px;">
       <figure>
       <img src="img/smartprix.png">
       <img src="img/fossee.png">
@@ -474,7 +425,7 @@
         </div>
       </div>
       <div id="footer-credits">
-        Copyright &copy; 2018. IIIT Kalyani Web Team
+        Copyright &copy; 2018 Indian Institute of Information Technology Kalyani. Developed by IIIT Kalyani's Web Team.
       </div>
     </div>
 
@@ -497,7 +448,7 @@
           <input type="button" class="button" onclick="companySignUp()" style="width:100%; margin: 10px 0px;" value="Login">
         </div>
         <div class="tab-pane" data-paneid="1" style="display: none; padding: 40px 50px; text-align: center;">
-          <img src="img/graduate.png" style="user-select:none; width: 80px; height: 80px; margin-bottom: 10px; padding: 10px; border: 1.5px solid rgb(32, 67, 128); border-radius : 5px;"">
+          <img src="img/graduate.png" style="user-select:none; width: 80px; height: 80px; margin-bottom: 10px; padding: 10px; border: 1.5px solid rgb(32, 67, 128); border-radius : 5px;">
           <input type="textbox" class="textbox" placeholder="Student Email" style="margin: 10px 0px; width: 100%;">
           <input type="password" class="textbox" placeholder="Password" style="margin: 10px 0px; width: 100%;">
           <input type="button" class="button" onclick="companySignUp()" style="width:100%; margin: 10px 0px;" value="Login">
@@ -507,9 +458,19 @@
     </div>
     </div>
 
+    <div id="mobile-menu">
+      <a href="#home" onclick="$('#mobile-menu').hide()">Home</a>
+      <a href="#about" onclick="$('#mobile-menu').hide()">About Us</a>
+      <a href="#infrastructure" onclick="$('#mobile-menu').hide()">Infrastructure</a>
+      <a href="#placement-record" onclick="$('#mobile-menu').hide()">Placement Record</a>
+      <a href="#footer" onclick="$('#mobile-menu').hide()">Contact Us</a>
+      <a href="register.html" onclick="$('#mobile-menu').hide()">Register</a>
+      <a href="javascript:void(0)" onclick="$('#mobile-menu').hide(); showLoginForm()"  class="blue-background">Login</a>
+    </div>
+
     <link rel="stylesheet" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
