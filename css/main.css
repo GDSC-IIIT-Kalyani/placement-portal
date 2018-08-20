@@ -469,7 +469,6 @@ a {
   width: 40vw;
   height: 60vh;
   padding: 0 0;
-  padding-bottom: 20px;
   margin: 0;
   border-radius: 5px;
 }
@@ -571,6 +570,7 @@ table {
 [ Fix header ]*/
 .table100 {
   position: relative;
+  height: 100%;
 }
 
 .table100-head {
@@ -581,8 +581,8 @@ table {
 }
 
 .table100-body {
-  max-height: 60vh;
-  overflow: auto;
+  height: 100%;
+  overflow: hidden;
   padding: 0;
 }
 
@@ -592,6 +592,7 @@ table {
   color: rgb(5, 5, 56);
   font-size: 15px;
   background-color: #f7f7f7;
+  height: 5vh;
 }
 
 .table100.ver5 .table100-body tr {
@@ -647,7 +648,7 @@ table {
 
 .js-pscroll {
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 
@@ -828,10 +829,6 @@ table {
     flex-direction: column;
   }
 
-  #placement-detail-1{
-    width: 80%;
-  }
-
   #about {
     flex-direction: column-reverse;
   }
@@ -965,6 +962,16 @@ table {
     height: 20vw;
     top: 50vw;
     left: 14vw;
+  }
+
+  #placement-detail-1 {
+  height: 62.433vh;
+  width: 80%;
+  }
+
+  #placement-chart {
+  width: 70vw;
+  padding: 10px 10px;
   }
 }
 
@@ -1119,6 +1126,10 @@ table {
     top: 75vw;
     left: 9vw;
   }
+
+  #placement-detail-1 {
+  height: 70vh;
+  }
 }
 
 @media only screen and (max-width: 540px) {
@@ -1251,5 +1262,9 @@ table {
     height: 40vw;
     top: 210vw;
     left: 13vw;
+  }
+
+  #placement-detail-1 {
+  height: 70vh;
   }
 }
