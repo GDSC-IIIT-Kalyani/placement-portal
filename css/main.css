@@ -180,6 +180,15 @@ a {
   padding: 30px;
   width: 150px;
   height: 150px;
+  -webkit-transition: width 0.75s; /* Safari */
+  transition: height width 0.75s;
+}
+
+#infrastructure .infra-icon img:hover {
+  display: block;
+  padding: 15px;
+  width: 157px;
+  height: 157px;
 }
 
 #infrastructure .infra-icon span {
