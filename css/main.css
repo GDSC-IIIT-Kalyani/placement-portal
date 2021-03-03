@@ -102,6 +102,7 @@ h2 {
   .header_top-flex {
     display: flex;
     justify-content: center;
+    text-align: center;
     flex-direction: column;
   }
 
@@ -114,12 +115,18 @@ h2 {
 
   .header_top-img {
     height: 110px;
-    width: 350px;
+    width: 300px;
   }
 
   .header_top-imgCenter {
     height: 80px;
     width: 70px;
+  }
+  .header_top-left {
+    margin-right: 0;
+  }
+  .header_top-right {
+    margin-left: 0;
   }
 }
 
