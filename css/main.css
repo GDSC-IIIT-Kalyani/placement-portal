@@ -8,7 +8,22 @@ html {
   padding: 0px;
   height: 100%;
   font-family: "Roboto Condensed", sans-serif;
-  color: rgb(5, 5, 56);
+  /* background-color: #212121; */
+  background-color: #121212;
+  /* background-color: #171f24; */
+  /* background-color: #161625; */
+
+  color: #fff;
+  /* color: rgba(255, 255, 255, 91%); */
+}
+
+#home {
+  border: 0px;
+  overflow: hidden;
+  /* background-color: #212121; */
+  background-color: #121212;
+  /* background-color: #171f24; */
+  /* background-color: #161625; */
 }
 
 * {
@@ -138,6 +153,7 @@ h2 {
   padding: 0 50px;
   background: white;
   border-bottom: 1px solid#ebecf0;
+  color: black;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -224,20 +240,20 @@ h2 {
 
 .download-link {
   display: inline-block;
-  background-color: rgb(20, 45, 84);
+  background-color: rgb(235, 237, 240);
   padding: 10px 0px;
   border-radius: 6px;
-  color: white;
+  color: rgb(37, 28, 28);
   width: 330px;
   text-align: center;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: bold;
   margin: 10px 0px;
 }
 
-#home {
-  border: 0px;
-  overflow: hidden;
+.download-link:hover {
+  background-color: white;
+  color: black;
 }
 
 #home > div {
@@ -272,7 +288,8 @@ h2 {
   width: 100%;
   height: auto;
   opacity: 0.8;
-  border: 25px solid #f6f6fa;
+  /* border: 25px solid #f6f6fa; */
+  border: 25px solid #272727;
 }
 
 #infrastructure {
@@ -300,7 +317,7 @@ h2 {
 #infrastructure .infra-icon {
   display: block;
   text-align: center;
-  border: 1px solid rgb(0, 0, 110);
+  border: 1px solid white;
   border-radius: 5px;
   padding: 10px 10px 20px 10px;
   margin: 30px;
@@ -308,7 +325,6 @@ h2 {
 
 #infrastructure .infra-icon:hover {
   background-color: #f6f6fa;
-  border: 2px solid rgb(0, 0, 110);
   margin: 29px;
 }
 
@@ -319,6 +335,12 @@ h2 {
   height: 150px;
   -webkit-transition: width 0.75s; /* Safari */
   transition: height width 0.75s;
+  background-color: white;
+}
+
+#infrastructure .infra-icon span {
+  font-size: 18px;
+  color: #fff;
 }
 
 #infrastructure .infra-icon img:hover {
@@ -326,11 +348,7 @@ h2 {
   padding: 15px;
   width: 157px;
   height: 157px;
-}
-
-#infrastructure .infra-icon span {
-  font-size: 18px;
-  color: rgb(0, 0, 110);
+  color: white;
 }
 
 .messagebox {
@@ -338,7 +356,7 @@ h2 {
   margin: 50px 30px;
 }
 
-.messagebox .title-bar {
+/* .messagebox .title-bar {
   height: 50px;
   background-color: #204584;
   color: white;
@@ -348,6 +366,18 @@ h2 {
   text-align: right;
   padding: 0px 30px;
   line-height: 50px;
+} */
+
+.messagebox .title-bar {
+  height: 50px;
+  background-color: #272727;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  padding: 0px 30px;
+  line-height: 53px;
 }
 
 .messagebox .content {
@@ -359,12 +389,14 @@ h2 {
   width: 100%;
   background-color: #eaeaea;
   padding: 40px;
+  color: black;
 }
 
 .messagebox .content .img-div {
   width: 320px;
   padding-top: 40px;
   background-color: #d1d3d4;
+  color: black;
 }
 
 .messagebox .img-div-mobile {
