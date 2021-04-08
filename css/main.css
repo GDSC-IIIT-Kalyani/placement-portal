@@ -1030,10 +1030,6 @@ table {
     display: block;
   }
 
-  #home {
-    background-color: #f6f6fa;
-  }
-
   #home .home-background {
     display: none;
   }
