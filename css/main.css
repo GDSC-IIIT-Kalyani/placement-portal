@@ -8,7 +8,16 @@ html {
   padding: 0px;
   height: 100%;
   font-family: "Roboto Condensed", sans-serif;
-  color: rgb(5, 5, 56);
+  background-color: #161625;
+
+  color: #fff;
+  /* color: rgba(255, 255, 255, 91%); */
+}
+
+#home {
+  border: 0px;
+  overflow: hidden;
+  background-color: #161625;
 }
 
 * {
