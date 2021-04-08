@@ -9,19 +9,14 @@ html {
   height: 100%;
   font-family: "Roboto Condensed", sans-serif;
   background-color: #171f24;
-  /* background-color: #161625; */
-
   color: #fff;
-  /* color: rgba(255, 255, 255, 91%); */
 }
 
 #home {
   border: 0px;
   overflow: hidden;
   background-color: #171f24;
-  /* background-color: #161625; */
 }
-
 * {
   box-sizing: border-box;
 }
