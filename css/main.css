@@ -8,8 +8,8 @@ html {
   padding: 0px;
   height: 100%;
   font-family: "Roboto Condensed", sans-serif;
-  /* background-color: #212121; */
-  background-color: #121212;
+  background-color: #212121;
+  /* background-color: #121212; */
   /* background-color: #171f24; */
   /* background-color: #161625; */
 
@@ -20,8 +20,8 @@ html {
 #home {
   border: 0px;
   overflow: hidden;
-  /* background-color: #212121; */
-  background-color: #121212;
+  background-color: #212121;
+  /* background-color: #121212; */
   /* background-color: #171f24; */
   /* background-color: #161625; */
 }
@@ -1028,10 +1028,6 @@ table {
 
   #header #nav-mobile {
     display: block;
-  }
-
-  #home {
-    background-color: #f6f6fa;
   }
 
   #home .home-background {
