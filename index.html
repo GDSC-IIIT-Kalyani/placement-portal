@@ -9,6 +9,8 @@
     <meta name="msapplication-navbutton-color" content="#204584">
     <meta name="apple-mobile-web-app-status-bar-style" content="#204584">
     <link rel="icon" href="img/logo_small.png">
+    <link rel="stylesheet" href="css/main.css">
+
   </head>
   <body>
     <div id="header">
@@ -20,6 +22,7 @@
       <div id="nav" class="nav">
         <a href="#header_top">Home</a>
         <a href="#about">About Us</a>
+        <a href="#recruiters">Past Recruiters</a>
         <a href="#placement-record">Placement Record</a>
         <a href="#infrastructure">Infrastructure</a>
         <a href="#footer">Contact Us</a>
@@ -58,7 +61,7 @@
       <div class="home-text">
         <span class="heading">Placement Portal</span><br>
         <h2 style="max-width: 400px">Passion is the difference between having a job or having a career.</h2><br>
-        <a href="./img/brochure/placement_brochure.pdf" target="_blank" class="download-link">Placement Brochure&nbsp;&nbsp;<i class="fas fa-download"></i></a>
+        <a href="img/brochure/placement_brochure_2022.pdf" target="_blank" class="download-link">Placement Brochure&nbsp;&nbsp;<i class="fas fa-download"></i></a>
         <br>
         <!-- <a href="#" class="download-link">Placement Invitation&nbsp;&nbsp;<i class="fas fa-download"></i></a> -->
       </div>
@@ -95,7 +98,8 @@
       </div>
     </div>
 
-	  <div class="container">
+    <hr>
+	  <div class="container" id="recruiters" styel="margin-top:30px">
       <h1 style="text-align: center;">
         Past Recruiters
       </h1>
@@ -124,6 +128,8 @@
 
     <div id="placement-record" class="section">
       <h1>Placement Statistics</h1>
+        Ongoing batch(2017-2021)
+
       <div id="placement-synopsis">
       	<div id="placement-detail-1">
       		<div class="table100 ver5 m-b-110">
@@ -190,10 +196,13 @@
 					</div>
 			</div>
       	</div>
-      	<div id="placement-chart">
-      		<canvas id="mycanvas" width="300" height="300"></canvas>
-      	</div>
+        <div class="2folds">
+          <img src="img/2folds/20-21.PNG" alt="2folds of batch 2017-2021"  class="batch20_21">
+        </div>
       </div>
+      <div id="placement-chart">
+      		<canvas id="mycanvas" width="700" height="700"></canvas>
+      	</div>
       <div class="placement-points">
         <ul>
           <li>IIIT Kalyani had a successful placement session during 2017-18.</li>
@@ -201,7 +210,13 @@
           <li>Some students even qualified for GATE, CAT and BARC and some have went to pursue higher studies in IITs.</li>
         </ul>
       </div>
-      <a href="#" class="download-link">Placement Synopsis&nbsp;&nbsp;<i class="fas fa-download"></i></a>
+      <div class="passout">
+      <a href="placement_stats/placement19-20.pdf" target="_blank" class="download-link">Batch 2016 - 2020</a>
+      <a href="placement_stats/placement18-19.pdf" target="_blank" class="download-link">Batch 2015 - 2019</a>
+      <a href="placement_stats/placement17-18.pdf" target="_blank" class="download-link">Batch 2014 - 2018</a>
+      <!-- <a href="#" class="download-link">Placement Synopsis&nbsp;&nbsp;<i class="fas fa-download"></i></a> -->
+
+      </div>
     </div>
 
 
@@ -248,9 +263,8 @@
             <div class="img-div-mobile">
               <img src="img/img-tpo.png">
               <div style="font-size: 15px;">
-              <span style="font-size: 15px; font-weight: bold;">Prof. Partha P. Chakrabarti</span><br>
-              TPO, IIT Kalyani <br>
-              Traing & Placement Cell<br> IIIT Kalyani
+              <span style="font-size: 15px; font-weight: bold;">Mr. Sudeep Chowdhury</span><br>
+              TPO, IIT Kalyani
               </div>
             </div>
             <div class="text">
@@ -266,9 +280,8 @@
             <div class="img-div">
               <img src="img/img-tpo.png" style="width: 90%;"><br><br>
               <div style="padding-left: 10px;">
-                <span style="font-size: 15px; font-weight: bold;">Prof. Partha P. Chakrabarti</span><br>
-                Director, IIT Kharagpur <br>
-                Mentor Director, IIIT Kalyani
+                <span style="font-size: 15px; font-weight: bold;">Mr. Sudeep Chowdhury</span><br>
+                TPO, IIT Kalyani
               </div>
             </div>
           </div>
@@ -292,29 +305,29 @@
           </h2>
       </div>
       <div class="icons-div">
-        <a href="http://iiitkalyani.ac.in/html/Campus.html" class="infra-icon">
+        <a href="http://iiitkalyani.ac.in/php/Campus.php" target="_blank" class="infra-icon">
           <img src="img/building_blue.svg">
           <span>CAMPUS</span>
         </a>
-        <a href="http://iiitkalyani.ac.in/html/Hostel.html" class="infra-icon">
+        <a href="http://iiitkalyani.ac.in/php/Hostel.php" target="_blank" class="infra-icon">
           <img src="img/bunk.svg">
           <span>HOSTEL</span>
         </a>
-        <a href="http://iiitkalyani.ac.in/html/Other.html" class="infra-icon">
-          <img src="img/cooking.svg">
-          <span>CANTEEN</span>
-        </a>
-        <a href="http://iiitkalyani.ac.in/html/Medical.html" class="infra-icon">
+        <a href="http://iiitkalyani.ac.in/php/Medical.php" target="_blank" class="infra-icon">
           <img src="img/hospital.svg">
           <span>HOSPITAL</span>
         </a>
-        <a href="http://iiitkalyani.ac.in/html/Labs.html" class="infra-icon">
+        <a href="http://iiitkalyani.ac.in/php/Labs.php" target="_blank" class="infra-icon">
           <img src="img/lab.svg">
           <span>LAB</span>
         </a>
-        <a href="http://iiitkalyani.ac.in/html/Library.html" class="infra-icon">
+        <a href="http://iiitkalyani.ac.in/php/Library.php" target="_blank" class="infra-icon">
           <img src="img/books.svg">
           <span>LIBRARY</span>
+        </a>
+             <a href="http://iiitkalyani.ac.in/php/Other.php" target="_blank" class="infra-icon">
+          <img src="img/cooking.svg">
+          <span>CANTEEN</span>
         </a>
       </div>
     </div>
@@ -496,14 +509,13 @@
       <!-- <a href="javascript:void(0)" onclick="$('#mobile-menu').hide(); showLoginForm()"  class="blue-background">Login</a> -->
     </div>
 
-    <link rel="stylesheet" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
- 	  <script type="text/javascript" src="js/main.js"></script>
+ 	  <script type="text/javascript" src="js/main.js"></script>z
  <!--   <script type="text/javascript" src="js/main.js"></script> -->
   </body>
 </html>
