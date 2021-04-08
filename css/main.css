@@ -8,10 +8,7 @@ html {
   padding: 0px;
   height: 100%;
   font-family: "Roboto Condensed", sans-serif;
-  /* background-color: #212121; */
-  background-color: #121212;
-  /* background-color: #171f24; */
-  /* background-color: #161625; */
+  background-color: #161625;
 
   color: #fff;
   /* color: rgba(255, 255, 255, 91%); */
@@ -20,10 +17,7 @@ html {
 #home {
   border: 0px;
   overflow: hidden;
-  /* background-color: #212121; */
-  background-color: #121212;
-  /* background-color: #171f24; */
-  /* background-color: #161625; */
+  background-color: #161625;
 }
 
 * {
