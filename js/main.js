@@ -17,13 +17,13 @@ $(document).ready(function () {
       label: "Qualified for CAT-2018",
     },
     {
-      value: 32,
+      value: 54,
       color: "darkorange",
       highlight: "orange",
       label: "Total Students Selected",
     },
     {
-      value: 44,
+      value: 84,
       color: "#9B59B6",
       highlight: "#5B2C6F",
       label: "Total Job Offers",
@@ -35,7 +35,7 @@ $(document).ready(function () {
       label: "Higher Studies",
     },
     {
-      value: 40,
+      value: 75,
       color: "#008000",
       highlight: "#ADFF2F",
       label: "Total Registered",
@@ -47,7 +47,7 @@ $(document).ready(function () {
     data: {
       datasets: [
         {
-          data: [12, 1, 32, 44, 2, 40],
+          data: [12, 1, 54, 84, 2, 75],
           backgroundColor: [
             "cornflowerblue",
             "Chocolate",
@@ -68,8 +68,8 @@ $(document).ready(function () {
         },
       ],
       labels: [
-        "Qualified for GATE-2018",
-        "Qualified for CAT-2018",
+        "Qualified for GATE-2021",
+        "Qualified for CAT-2021",
         "Total Students Selected",
         "Total Job Offers",
         "Higher Studies",
