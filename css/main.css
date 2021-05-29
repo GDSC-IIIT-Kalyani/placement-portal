@@ -21,7 +21,7 @@ a {
 }
 
 .heading {
-  font-size: 70px;
+  font-size: 383%;
   font-weight: bold;
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -222,13 +222,31 @@ h2 {
   padding: 75px 0px 50px 0px;
 }
 
+.passout {
+  width: 100%;
+  padding: 0 40px;
+}
+
 .download-link {
   display: inline-block;
   background-color: rgb(20, 45, 84);
   padding: 10px 0px;
   border-radius: 6px;
   color: white;
-  width: 330px;
+  width: 33%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 10px 0px;
+}
+
+.brochure-link {
+  display: inline-block;
+  background-color: rgb(20, 45, 84);
+  padding: 10px 0px;
+  border-radius: 6px;
+  color: white;
+  width: 300px;
   text-align: center;
   font-size: 22px;
   font-weight: 300;
@@ -246,6 +264,12 @@ h2 {
   margin-left: 100px;
 }
 
+@media only screen and (max-width: 1052px) {
+  #home > div {
+    margin-left: 20px;
+  }
+}
+
 #home .home-background {
   position: absolute;
   top: 0px;
@@ -255,7 +279,7 @@ h2 {
 }
 
 #home .home-text {
-  padding: 10px 50px;
+  padding: 0px 0px;
 }
 
 #about .about-text {
@@ -661,8 +685,15 @@ h2 {
 }
 
 #placement-chart {
-  width: 30vw;
+  width: 35vw;
   padding: 20px 20px;
+}
+
+@media only screen and (min-width: 1000px) {
+  #placement-chart {
+    width: 35vw;
+    padding: 20px 20px;
+  }
 }
 
 #placement-record {
@@ -944,12 +975,12 @@ table {
   }
 
   #placement-chart {
-    width: 70vw;
+    width: 50vw;
     padding: 10px 10px;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 889px) {
   #footer-container-down > div {
     flex-basis: 50%;
     margin-top: 20px;
@@ -1095,7 +1126,7 @@ table {
   #home .home-text {
     margin-top: 25px;
     padding: 10px 25px;
-    text-align: center;
+    text-align: left;
   }
 
   #home > div {
