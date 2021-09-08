@@ -179,6 +179,21 @@ h2 {
   line-height: 20px;
 }
 
+.bera-class {
+  margin: -2% auto !important;
+  text-align: center !important;
+
+  display: block !important;
+  margin-right: 8% !important;
+  margin-left: 4% !important;
+}
+@media only screen and (max-width: 420px) {
+  .bera-class {
+    width: 100% !important;
+    margin: -2% -7.5% !important;
+  }
+}
+
 #header .nav a:hover {
   background-color: rgb(248, 248, 248);
 }
@@ -313,8 +328,23 @@ h2 {
 #about .about-img img {
   width: 100%;
   height: auto;
-  opacity: 0.8;
+  /* opacity: 0.9; */
   border: 25px solid #f6f6fa;
+}
+.whyus-cont {
+  background: #f6f6fa;
+  padding: 80px;
+  text-align: center;
+}
+
+.whyus-cont h2 {
+  margin: 0 auto !important;
+  width: 101%;
+  margin-top: 60px !important;
+  margin-bottom: 15px !important;
+  border: 2px solid rgb(15, 70, 158);
+  border-radius: 6px;
+  padding: 8px;
 }
 
 #infrastructure {
