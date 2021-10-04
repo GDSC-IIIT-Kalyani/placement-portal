@@ -1222,3 +1222,35 @@ table {
     height: 70vh;
   }
 }
+
+/* hamburger css */
+
+.header-hamburger{
+  display: none;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 1001;
+  padding: 8px;
+  right: 2.7rem;
+  top: 2rem;
+  position: fixed;
+}
+
+.header-hamburger div{
+  width: 1.8rem;
+  background-color: white;
+  border-radius: 15px;
+  height: 4px;
+  margin: 5px;
+}
+
+.hamburger-active{
+  display: block;
+}
+
+.hamburger-inactive{
+  display: block;
+}
