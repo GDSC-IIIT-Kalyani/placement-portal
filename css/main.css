@@ -1254,3 +1254,30 @@ table {
 .hamburger-inactive{
   display: block;
 }
+
+/* text overflow handling */
+
+@media screen and (max-width: 705px) {
+  .headinggs, .headinggs h2, .whyus-cont h2{
+    font-size: 145%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .headinggs, .headinggs h2, .whyus-cont h2{
+    font-size: 120%;
+  }
+  #about .headinggs{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .headinggs, .whyus-cont h2{
+    font-size: 80%;
+  }
+  .whyus-cont h2{
+    font-weight: bold;
+  }
+}
+
