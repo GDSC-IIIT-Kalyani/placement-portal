@@ -229,3 +229,18 @@ $(document).ready(function () {
     }
   });
 });
+
+// hamburger application
+
+$("#nav-mobile a").click(()=>{
+  $(".header-hamburger").addClass("hamburger-active");
+});
+
+$("#mobile-menu a").click(()=>{
+  $(".header-hamburger").removeClass("hamburger-active");
+});
+
+$(".header-hamburger").click(()=>{
+  $("#mobile-menu").css('display','none');
+  $(".header-hamburger").removeClass("hamburger-active");
+});
