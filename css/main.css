@@ -13,13 +13,13 @@ html {
 .headinggs {
   width: 90%;
   text-align: center;
-  padding: 12px;
+  padding: 1em;
   color: white;
   text-decoration: none;
   background-color: rgb(20, 45, 84);
-  border: 2px solid rgb(20, 45, 84);
-  border-radius: 10px;
-  margin-bottom: 20px;
+  border: 1em solid rgb(20, 45, 84);
+  border-radius: 2em;
+  margin-bottom: 3em;
 }
 
 .lists li {
