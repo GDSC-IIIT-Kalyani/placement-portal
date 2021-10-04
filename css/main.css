@@ -22,6 +22,18 @@ html {
   margin-bottom: 20px;
 }
 
+.heading2{
+  width: 90%;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(20, 45, 84);
+  border: 2px solid rgb(20, 45, 84);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
 .lists li {
   font-weight: 550;
 }
@@ -1160,6 +1172,9 @@ table {
 }
 
 @media only screen and (max-width: 540px) {
+  .heading2{
+    font-size: 15px;
+  }
   #header {
     height: 60px;
     padding: 0px 20px;
