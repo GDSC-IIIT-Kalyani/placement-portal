@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Arvo:700');
 @import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 body,
 html {
@@ -76,7 +77,7 @@ h2 {
 .matter{
   color: #050538;
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: normal;
+  font-weight: lighter;
   font-size: 19px;
   margin: 15.77px 0px;
 }
