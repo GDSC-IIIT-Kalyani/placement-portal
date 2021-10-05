@@ -112,18 +112,30 @@ h2 {
 
 .scrollTop {
   position: fixed;
-  bottom: 40px;
+  bottom: 800px;
   right: 15px;
   width: 40px;
   height: 40px;
-  background: #fff url("../img/scroll-top.png");
+  background: #fff;
   border-radius: 50%;
   background-size: 40px;
   background-position: center;
-  background-repeat: no-repeat;
   z-index: 1000;
+  cursor: pointer;
   visibility: hidden;
   opacity: 0;
+  transition: 0.5s;
+}
+
+.scrollTop img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.scrollTop.active {
+  bottom: 20px;
+  visibility: visible;
+  opacity: 1;
 }
 
 @media only screen and (max-width: 980px) {

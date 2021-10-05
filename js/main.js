@@ -232,15 +232,28 @@ $(document).ready(function () {
 
 // hamburger application
 
-$("#nav-mobile a").click(()=>{
+$("#nav-mobile a").click(() => {
   $(".header-hamburger").addClass("hamburger-active");
 });
 
-$("#mobile-menu a").click(()=>{
+$("#mobile-menu a").click(() => {
   $(".header-hamburger").removeClass("hamburger-active");
 });
 
-$(".header-hamburger").click(()=>{
-  $("#mobile-menu").css('display','none');
+$(".header-hamburger").click(() => {
+  $("#mobile-menu").css("display", "none");
   $(".header-hamburger").removeClass("hamburger-active");
 });
+
+// Scroll to top
+window.addEventListener("scroll", function () {
+  let scroll = document.querySelector(".scrollTop");
+  scroll.classList.toggle("active", window.scrollY > 500);
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
