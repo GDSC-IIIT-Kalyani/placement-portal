@@ -1244,13 +1244,16 @@ table {
   background-color: white;
   border-radius: 15px;
   height: 4px;
-  margin: 5px;
+  margin: 9px;
 }
 
 .hamburger-active{
   display: block;
 }
 
-.hamburger-inactive{
-  display: block;
+.hamburger-line1 {
+  transform: rotate(-405deg) translate(-5px, 5px);
+}
+.hamburger-line3 {
+  transform: rotate(405deg) translate(-5px, -5px);
 }
