@@ -233,14 +233,14 @@ $(document).ready(function () {
 // hamburger application
 
 $("#nav-mobile a").click(()=>{
-  $(".header-hamburger").addClass("hamburger-active");
+  $(".header-hamburgerrr").addClass("hamburgerrr-active");
 });
 
 $("#mobile-menu a").click(()=>{
-  $(".header-hamburger").removeClass("hamburger-active");
+  $(".header-hamburgerrr").removeClass("hamburgerrr-active");
 });
 
-$(".header-hamburger").click(()=>{
+$(".header-hamburgerrr").click(()=>{
   $("#mobile-menu").css('display','none');
-  $(".header-hamburger").removeClass("hamburger-active");
+  $(".header-hamburgerrr").removeClass("hamburgerrr-active");
 });
