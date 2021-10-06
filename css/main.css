@@ -346,7 +346,7 @@ h2 {
 .whyus-cont {
   background: #f6f6fa;
   padding: 80px;
-  text-align: center;
+  text-align: left;
 }
 
 .whyus-cont h2 {
@@ -357,6 +357,7 @@ h2 {
   border: 2px solid rgb(15, 70, 158);
   border-radius: 6px;
   padding: 8px;
+  text-align: center;
 }
 
 #infrastructure {
@@ -1339,9 +1340,56 @@ table {
   }
 }
 
-.profile-sec {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+/* hamburger css */
+
+.header-hamburger{
+  display: none;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 1001;
+  padding: 8px;
+  right: 2.7rem;
+  top: 2rem;
+  position: fixed;
+}
+
+.header-hamburger div{
+  width: 1.8rem;
+  background-color: white;
+  border-radius: 15px;
+  height: 4px;
+  margin: 5px;
+}
+
+.hamburger-active{
+  display: block;
+}
+
+/* text overflow handling */
+
+@media screen and (max-width: 705px) {
+  .headinggs, .headinggs h2, .whyus-cont h2{
+    font-size: 145%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .headinggs, .headinggs h2, .whyus-cont h2{
+    font-size: 120%;
+  }
+  #about .headinggs{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .headinggs, .whyus-cont h2{
+    font-size: 80%;
+  }
+  .whyus-cont h2{
+    font-weight: bold;
+  }
 }
