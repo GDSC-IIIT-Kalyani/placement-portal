@@ -110,6 +110,34 @@ h2 {
   width: 70px;
 }
 
+.scrollTop {
+  position: fixed;
+  bottom: 800px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  background-size: 40px;
+  background-position: center;
+  z-index: 1000;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.scrollTop img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.scrollTop.active {
+  bottom: 20px;
+  visibility: visible;
+  opacity: 1;
+}
+
 @media only screen and (max-width: 980px) {
   .header_top-left {
     margin-right: 30px;
@@ -1342,7 +1370,7 @@ table {
 
 /* hamburger css */
 
-.header-hamburgerrr{
+.header-hamburgerrr {
   display: none;
   cursor: pointer;
   background-color: rgb(0, 0, 0);
@@ -1356,7 +1384,7 @@ table {
   position: fixed;
 }
 
-.header-hamburgerrr div{
+.header-hamburgerrr div {
   width: 1.8rem;
   background-color: white;
   border-radius: 15px;
@@ -1364,32 +1392,37 @@ table {
   margin: 5px;
 }
 
-.hamburgerrr-active{
+.hamburgerrr-active {
   display: block;
 }
 
 /* text overflow handling */
 
 @media screen and (max-width: 705px) {
-  .headinggs, .headinggs h2, .whyus-cont h2{
+  .headinggs,
+  .headinggs h2,
+  .whyus-cont h2 {
     font-size: 145%;
   }
 }
 
 @media screen and (max-width: 610px) {
-  .headinggs, .headinggs h2, .whyus-cont h2{
+  .headinggs,
+  .headinggs h2,
+  .whyus-cont h2 {
     font-size: 120%;
   }
-  #about .headinggs{
+  #about .headinggs {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .headinggs, .whyus-cont h2{
+  .headinggs,
+  .whyus-cont h2 {
     font-size: 80%;
   }
-  .whyus-cont h2{
+  .whyus-cont h2 {
     font-weight: bold;
   }
 }
