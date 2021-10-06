@@ -1370,7 +1370,7 @@ table {
 
 /* hamburger css */
 
-.header-hamburger {
+.header-hamburgerrr{
   display: none;
   cursor: pointer;
   background-color: rgb(0, 0, 0);
@@ -1384,7 +1384,7 @@ table {
   position: fixed;
 }
 
-.header-hamburger div {
+.header-hamburgerrr div{
   width: 1.8rem;
   background-color: white;
   border-radius: 15px;
@@ -1392,7 +1392,7 @@ table {
   margin: 5px;
 }
 
-.hamburger-active {
+.hamburgerrr-active{
   display: block;
 }
 
@@ -1425,4 +1425,10 @@ table {
   .whyus-cont h2 {
     font-weight: bold;
   }
+}
+.hamburgerrr-line1 {
+  transform: rotate(-405deg) translate(-4px, 4px);
+}
+.hamburgerrr-line3 {
+  transform: rotate(405deg) translate(-3px, -3px);
 }

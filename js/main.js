@@ -243,6 +243,18 @@ $("#mobile-menu a").click(() => {
 $(".header-hamburger").click(() => {
   $("#mobile-menu").css("display", "none");
   $(".header-hamburger").removeClass("hamburger-active");
+
+$("#nav-mobile a").click(()=>{
+  $(".header-hamburgerrr").addClass("hamburgerrr-active");
+});
+
+$("#mobile-menu a").click(()=>{
+  $(".header-hamburgerrr").removeClass("hamburgerrr-active");
+});
+
+$(".header-hamburgerrr").click(()=>{
+  $("#mobile-menu").css('display','none');
+  $(".header-hamburgerrr").removeClass("hamburgerrr-active");
 });
 
 // Scroll to top
