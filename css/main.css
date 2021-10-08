@@ -312,6 +312,10 @@ h2 {
   margin: 10px 0px;
 }
 
+.download-link:hover {
+  background: black !important;
+  color: white !important;
+}
 .brochure-link {
   display: inline-block;
   background-color: rgb(20, 45, 84);
