@@ -1348,11 +1348,7 @@ table {
 
 /* hamburger css */
 
-<<<<<<< HEAD
 .header-hamburger {
-=======
-.header-hamburgerrr{
->>>>>>> 78f08778b97832e2f74268404d865a6d69a1e469
   display: none;
   cursor: pointer;
   background-color: rgb(0, 0, 0);
@@ -1366,11 +1362,8 @@ table {
   position: fixed;
 }
 
-<<<<<<< HEAD
+
 .header-hamburger div {
-=======
-.header-hamburgerrr div{
->>>>>>> 78f08778b97832e2f74268404d865a6d69a1e469
   width: 1.8rem;
   background-color: white;
   border-radius: 15px;
@@ -1378,11 +1371,7 @@ table {
   margin: 5px;
 }
 
-<<<<<<< HEAD
 .hamburger-active {
-=======
-.hamburgerrr-active{
->>>>>>> 78f08778b97832e2f74268404d865a6d69a1e469
   display: block;
 }
 
@@ -1416,8 +1405,6 @@ table {
     font-weight: bold;
   }
 }
-<<<<<<< HEAD
-=======
 
 .hamburgerrr-line1 {
   transform: rotate(-405deg) translate(-4px, 4px);
@@ -1425,4 +1412,9 @@ table {
 .hamburgerrr-line3 {
   transform: rotate(405deg) translate(-3px, -3px);
 }
->>>>>>> 78f08778b97832e2f74268404d865a6d69a1e469
+
+a.brochure-link:hover{
+  font-weight: 600;
+  color:white !important;
+  
+}
