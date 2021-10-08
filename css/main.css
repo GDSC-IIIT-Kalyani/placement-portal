@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo:700');
 @import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
 
+
 body,
 html {
   margin: 0px;
@@ -1157,6 +1158,7 @@ table {
     font-size: 19px;
     font-weight: 300;
   }
+
 
   .placement-points {
     font-size: 17px;
