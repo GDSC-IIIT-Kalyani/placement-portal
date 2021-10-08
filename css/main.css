@@ -1400,3 +1400,11 @@ table {
 .hamburgerrr-line3 {
   transform: rotate(405deg) translate(-3px, -3px);
 }
+
+
+a.brochure-link:hover{
+  font-weight: 600;
+  color:white !important;
+  
+}
+
