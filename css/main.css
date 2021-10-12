@@ -1346,7 +1346,7 @@ table {
 
 /* hamburger css */
 
-.header-hamburger {
+.header-hamburgerrr {
   display: none;
   cursor: pointer;
   background-color: rgb(0, 0, 0);
@@ -1354,13 +1354,22 @@ table {
   border-radius: 100%;
   position: absolute;
   z-index: 1001;
-  padding: 8px;
+  padding: 12px 8px;
   right: 2.7rem;
   top: 2rem;
   position: fixed;
 }
 
-.header-hamburger div {
+@media screen and (max-width: 470px) {
+  .header-hamburgerrr{
+    padding: 8px 5px;
+  }
+  .header-hamburgerrr div{
+    width: 1.6rem;
+  }
+}
+
+.header-hamburgerrr div {
   width: 1.8rem;
   background-color: white;
   border-radius: 15px;
@@ -1368,7 +1377,7 @@ table {
   margin: 5px;
 }
 
-.hamburger-active {
+.hamburgerrr-active {
   display: block;
 }
 
