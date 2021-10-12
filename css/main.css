@@ -299,7 +299,18 @@ h2 {
   font-size: 22px;
   font-weight: 300;
   margin: 10px 0px;
+  transition: 0.5s;
 }
+
+a.brochure-link:hover {
+  transform: scale(1.1);
+  font-weight: 600;
+  color: white !important;
+  background-color: black;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
 
 #home {
   border: 0px;
@@ -1410,8 +1421,8 @@ table {
   transform: rotate(405deg) translate(-3px, -3px);
 }
 
-a.brochure-link:hover {
+/* a.brochure-link:hover {
   font-weight: 600;
   color: white !important;
   background-color: black;
-}
+} */
