@@ -311,7 +311,6 @@ a.brochure-link:hover {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-
 #home {
   border: 0px;
   overflow: hidden;
@@ -1372,10 +1371,10 @@ table {
 }
 
 @media screen and (max-width: 470px) {
-  .header-hamburgerrr{
+  .header-hamburgerrr {
     padding: 8px 5px;
   }
-  .header-hamburgerrr div{
+  .header-hamburgerrr div {
     width: 1.6rem;
   }
 }
