@@ -20,6 +20,7 @@ html {
   border: 2px solid rgb(20, 45, 84);
   border-radius: 10px;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .heading2 {
@@ -360,7 +361,7 @@ a.brochure-link:hover {
 .whyus-cont {
   background: #f6f6fa;
   padding: 80px;
-  text-align: left;
+  text-align: center;
 }
 
 .whyus-cont h2 {
