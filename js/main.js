@@ -93,6 +93,25 @@ $(document).ready(function () {
   });
 });
 
+let mybutton = document.getElementById("btn-back-to-top");
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 var tagsBoxes = {
   el: [],
   data: [],
@@ -232,15 +251,15 @@ $(document).ready(function () {
 
 // hamburger application
 
-$("#nav-mobile a").click(()=>{
+$("#nav-mobile a").click(() => {
   $(".header-hamburgerrr").addClass("hamburgerrr-active");
 });
 
-$("#mobile-menu a").click(()=>{
+$("#mobile-menu a").click(() => {
   $(".header-hamburgerrr").removeClass("hamburgerrr-active");
 });
 
-$(".header-hamburgerrr").click(()=>{
-  $("#mobile-menu").css('display','none');
+$(".header-hamburgerrr").click(() => {
+  $("#mobile-menu").css("display", "none");
   $(".header-hamburgerrr").removeClass("hamburgerrr-active");
 });
