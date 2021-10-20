@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Arvo:700');
-@import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Arvo:700");
+@import url("https://fonts.googleapis.com/css?family=Hammersmith+One");
 
 body,
 html {
   margin: 0px;
   padding: 0px;
   height: 100%;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   color: rgb(5, 5, 56);
 }
 .headinggs {
@@ -52,7 +52,7 @@ a:hover {
 .heading {
   font-size: 383%;
   font-weight: bold;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 h1,
@@ -61,7 +61,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 h1 {
@@ -299,6 +299,16 @@ h2 {
   font-size: 22px;
   font-weight: 300;
   margin: 10px 0px;
+  transition: 0.5s;
+}
+
+a.brochure-link:hover {
+  transform: scale(1.1);
+  font-weight: 600;
+  color: white !important;
+  background-color: black;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 #home {
@@ -431,7 +441,7 @@ h2 {
   height: 50px;
   background-color: #204584;
   color: white;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
   font-size: 25px;
   text-align: right;
@@ -485,7 +495,7 @@ h2 {
   outline: none;
   font-size: 15px;
   color: rgb(5, 5, 56);
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   border-radius: 6px;
 }
 .textbox:focus {
@@ -499,7 +509,7 @@ h2 {
   outline: none;
   color: white;
   border: none;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
   font-weight: 300;
   border: 1px solid rgb(24, 46, 82);
@@ -584,7 +594,7 @@ h2 {
 
 #contact-us {
   background-color: white;
-  background-image: url('../img/contact-us-background.svg');
+  background-image: url("../img/contact-us-background.svg");
   background-repeat: no-repeat;
   background-position: left center;
 }
@@ -604,7 +614,7 @@ h2 {
   position: absolute;
   top: 3vw;
   left: 3vw;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 4.5vw;
   color: #616161;
 }
@@ -855,7 +865,7 @@ table {
 }
 
 .table100.ver5 td {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   color: rgb(5, 5, 56);
   font-size: 15px;
   background-color: #f7f7f7;
@@ -1194,7 +1204,7 @@ table {
 }
 
 .our-team .picture::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 0;
   border-radius: 50%;
@@ -1213,7 +1223,7 @@ table {
 }
 
 .our-team .picture::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -1346,11 +1356,7 @@ table {
 
 /* hamburger css */
 
-<<<<<<< HEAD
-.header-hamburger {
-=======
-.header-hamburgerrr{
->>>>>>> 78f08778b97832e2f74268404d865a6d69a1e469
+.header-hamburgerrr {
   display: none;
   cursor: pointer;
   background-color: rgb(0, 0, 0);
@@ -1358,17 +1364,22 @@ table {
   border-radius: 100%;
   position: absolute;
   z-index: 1001;
-  padding: 8px;
+  padding: 12px 8px;
   right: 2.7rem;
   top: 2rem;
   position: fixed;
 }
 
-<<<<<<< HEAD
-.header-hamburger div {
-=======
-.header-hamburgerrr div{
->>>>>>> 78f08778b97832e2f74268404d865a6d69a1e469
+@media screen and (max-width: 470px) {
+  .header-hamburgerrr {
+    padding: 8px 5px;
+  }
+  .header-hamburgerrr div {
+    width: 1.6rem;
+  }
+}
+
+.header-hamburgerrr div {
   width: 1.8rem;
   background-color: white;
   border-radius: 15px;
@@ -1376,11 +1387,7 @@ table {
   margin: 5px;
 }
 
-<<<<<<< HEAD
-.hamburger-active {
-=======
-.hamburgerrr-active{
->>>>>>> 78f08778b97832e2f74268404d865a6d69a1e469
+.hamburgerrr-active {
   display: block;
 }
 
@@ -1414,8 +1421,6 @@ table {
     font-weight: bold;
   }
 }
-<<<<<<< HEAD
-=======
 
 .hamburgerrr-line1 {
   transform: rotate(-405deg) translate(-4px, 4px);
@@ -1423,4 +1428,9 @@ table {
 .hamburgerrr-line3 {
   transform: rotate(405deg) translate(-3px, -3px);
 }
->>>>>>> 78f08778b97832e2f74268404d865a6d69a1e469
+
+/* a.brochure-link:hover {
+  font-weight: 600;
+  color: white !important;
+  background-color: black;
+} */
