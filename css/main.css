@@ -4,6 +4,7 @@
 
 * {
   text-align: justify;
+  box-sizing: border-box;
   text-justify: inter-word;
   font-size: 16px;
 }
@@ -13,8 +14,23 @@ html {
   margin: 0px;
   padding: 0px;
   height: 100%;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman", serif;
   color: rgb(5, 5, 56);
+}
+
+#home {
+  border: 0px;
+  overflow: hidden;
+}
+
+#home > div {
+  width: 50%;
+  height: 100%;
+  margin-left: 100px;
+}
+
+.home_para {
+  font-size: 20px !important;
 }
 
 .headinggs {
@@ -42,11 +58,12 @@ html {
   margin-bottom: 20px;
 }
 
+.whyus {
+  background: #f6f6fa;
+}
+
 .lists li {
   font-weight: 550;
-}
-* {
-  box-sizing: border-box;
 }
 
 a {
@@ -293,12 +310,13 @@ h2 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 75px 0px 50px 0px;
+  /* padding: 75px 0px 50px 0px; */
 }
 
 .passout {
-  width: 100%;
+  width: 90%;
   padding: 0 40px;
+  margin-bottom: 20px;
 }
 
 .download-link {
@@ -341,17 +359,6 @@ a.brochure-link:hover {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-#home {
-  border: 0px;
-  overflow: hidden;
-}
-
-#home > div {
-  width: 50%;
-  height: 100%;
-  margin-left: 100px;
-}
-
 @media only screen and (max-width: 1052px) {
   #home > div {
     margin-left: 20px;
@@ -371,7 +378,7 @@ a.brochure-link:hover {
 }
 
 #about .about-text {
-  width: 50%;
+  width: 65%;
   padding: 10px 50px;
 }
 
@@ -801,6 +808,7 @@ a.brochure-link:hover {
 }
 
 #placement-record {
+  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -958,11 +966,17 @@ table {
 }
 
 #footer {
-  background-color: rgb(20, 45, 84);
+  background-color: rgb(42, 82, 146);
   text-align: center;
+}
+
+a:hover {
+  color: black !important;
 }
 .heading-footer {
   padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 #footer-container-down {
@@ -1008,6 +1022,8 @@ table {
   margin-top: 20px;
   font-weight: 800;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 1000px) {
