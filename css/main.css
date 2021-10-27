@@ -163,6 +163,10 @@ h2 {
 }
 
 @media only screen and (max-width: 646px) {
+  .whyus-cont {
+    padding: 80px 5px;
+  }
+
   .header_top-flex {
     display: flex;
     justify-content: center;
