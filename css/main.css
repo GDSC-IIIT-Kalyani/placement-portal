@@ -9,6 +9,16 @@
   font-size: 16px;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 body,
 html {
   margin: 0px;
@@ -153,6 +163,10 @@ h2 {
 }
 
 @media only screen and (max-width: 646px) {
+  .whyus-cont {
+    padding: 80px 5px;
+  }
+
   .header_top-flex {
     display: flex;
     justify-content: center;
