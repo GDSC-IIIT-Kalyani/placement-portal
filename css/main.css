@@ -351,7 +351,7 @@ h2 {
 }
 
 .download-link:hover {
-  background: black !important;
+  background: #2b64cb !important;
   color: white !important;
 }
 .brochure-link {
@@ -1117,19 +1117,19 @@ a:hover {
   }
 }
 
-@media screen and (max-width:850px) {
-  .fot-head{
+@media screen and (max-width: 850px) {
+  .fot-head {
     font-size: 2rem;
   }
 }
 
-@media screen and (max-width:500px) {
-  .fot-head{
+@media screen and (max-width: 500px) {
+  .fot-head {
     font-size: 1.7rem;
   }
 }
-@media screen and (max-width:350px) {
-  .fot-head{
+@media screen and (max-width: 350px) {
+  .fot-head {
     font-size: 1.3rem;
   }
 }
