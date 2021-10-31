@@ -216,6 +216,10 @@ h2 {
   width: 25%;
 }
 
+#logo{
+  cursor: pointer;
+}
+
 #header .nav {
   margin: 0px;
   width: 75%;
@@ -811,7 +815,8 @@ a.brochure-link:hover {
 
 @media only screen and (min-width: 1000px) {
   #placement-chart {
-    width: 35vw;
+    /* width: 35vw; */
+    width: auto;
     padding: 20px 20px;
   }
 }
@@ -1107,8 +1112,39 @@ a:hover {
   }
 
   #placement-chart {
-    width: 100vw;
+    /* width: 100vw; */
     padding: 10px 10px;
+  }
+}
+
+@media screen and (max-width:850px) {
+  .fot-head{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .fot-head{
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width:350px) {
+  .fot-head{
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #placement-chart {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #placement-chart {
+    width: 350px;
+    height: 350px;
   }
 }
 
