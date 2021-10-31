@@ -216,6 +216,10 @@ h2 {
   width: 25%;
 }
 
+#logo{
+  cursor: pointer;
+}
+
 #header .nav {
   margin: 0px;
   width: 75%;
