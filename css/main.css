@@ -818,7 +818,7 @@ a.brochure-link:hover {
 }
 
 #placement-record {
-  margin: 10px;
+/*   margin: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
