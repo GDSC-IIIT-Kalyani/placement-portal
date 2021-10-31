@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Arvo:700');
-@import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Arvo:700");
+@import url("https://fonts.googleapis.com/css?family=Hammersmith+One");
 
 * {
   text-align: justify;
@@ -24,7 +24,7 @@ html {
   margin: 0px;
   padding: 0px;
   height: 100%;
-  font-family: 'Times New Roman', serif;
+  font-family: "Times New Roman", serif;
   color: rgb(5, 5, 56);
 }
 
@@ -87,7 +87,7 @@ a:hover {
 .heading {
   font-size: 383%;
   font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 h1,
@@ -96,7 +96,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 h1 {
@@ -492,7 +492,7 @@ a.brochure-link:hover {
   height: 50px;
   background-color: #204584;
   color: white;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 300;
   font-size: 25px;
   text-align: right;
@@ -546,7 +546,7 @@ a.brochure-link:hover {
   outline: none;
   font-size: 15px;
   color: rgb(5, 5, 56);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   border-radius: 6px;
 }
 .textbox:focus {
@@ -560,7 +560,7 @@ a.brochure-link:hover {
   outline: none;
   color: white;
   border: none;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 18px;
   font-weight: 300;
   border: 1px solid rgb(24, 46, 82);
@@ -645,7 +645,7 @@ a.brochure-link:hover {
 
 #contact-us {
   background-color: white;
-  background-image: url('../img/contact-us-background.svg');
+  background-image: url("../img/contact-us-background.svg");
   background-repeat: no-repeat;
   background-position: left center;
 }
@@ -665,7 +665,7 @@ a.brochure-link:hover {
   position: absolute;
   top: 3vw;
   left: 3vw;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 4.5vw;
   color: #616161;
 }
@@ -809,11 +809,6 @@ a.brochure-link:hover {
   justify-content: space-around;
 }
 
-#placement-chart {
-  width: 35vw;
-  padding: 20px 20px;
-}
-
 @media only screen and (min-width: 1000px) {
   #placement-chart {
     width: 35vw;
@@ -917,7 +912,7 @@ table {
 }
 
 .table100.ver5 td {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   color: rgb(5, 5, 56);
   font-size: 15px;
   background-color: #f7f7f7;
@@ -1112,7 +1107,7 @@ a:hover {
   }
 
   #placement-chart {
-    width: 50vw;
+    width: 100vw;
     padding: 10px 10px;
   }
 }
@@ -1264,7 +1259,7 @@ a:hover {
 }
 
 .our-team .picture::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 0;
   border-radius: 50%;
@@ -1283,7 +1278,7 @@ a:hover {
 }
 
 .our-team .picture::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -1495,13 +1490,6 @@ a:hover {
   background-color: black;
 } */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-}
 a,
 a:hover,
 a:focus,
@@ -1557,7 +1545,7 @@ span {
   margin-bottom: 30px;
 }
 .section-head h4:before {
-  content: '';
+  content: "";
   width: 60px;
   height: 3px;
   background: #204584;
@@ -1595,7 +1583,7 @@ p.awesome_line {
   text-transform: none;
 }
 .extra-text::before {
-  content: '';
+  content: "";
   width: 60px;
   height: 3px;
   background: #204584;
