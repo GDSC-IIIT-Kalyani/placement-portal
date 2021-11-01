@@ -811,14 +811,14 @@ a.brochure-link:hover {
 
 @media only screen and (min-width: 1000px) {
   #placement-chart {
-    /* width: 35vw; */
-    width: auto;
+    width: 35vw;
+    /* width: auto; */
     padding: 20px 20px;
   }
 }
 
 #placement-record {
-  margin: 10px;
+  /* margin: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1109,9 +1109,38 @@ a:hover {
 
   #placement-chart {
     /* width: 100vw; */
+    width: 60vw;
+    /* width: auto; */
     padding: 10px 10px;
+    justify-content: center;
   }
 }
+
+@media screen and (max-width: 700px) {
+  #placement-chart{
+    width: 80vw;
+  }
+}
+/* @media screen and (max-width: 510px) {
+  #placement-chart{
+    width: 90vw;
+  }
+} */
+/* @media screen and (max-width: 375px) {
+  #placement-chart{
+    width: 100vw;
+  }
+} */
+/* @media screen and (max-width: 320px) {
+  #placement-chart{
+    width: 120vw;
+  }
+} */
+/* @media screen and (max-width: 280px) {
+  #placement-chart{
+    width: 10vw;
+  }
+} */
 
 @media screen and (max-width: 850px) {
   .fot-head {
@@ -1129,7 +1158,7 @@ a:hover {
     font-size: 1.3rem;
   }
 }
-
+/*
 @media screen and (max-width: 500px) {
   #placement-chart {
     width: 400px;
@@ -1142,7 +1171,7 @@ a:hover {
     width: 350px;
     height: 350px;
   }
-}
+} */
 
 @media only screen and (max-width: 889px) {
   #footer-container-down > div {
